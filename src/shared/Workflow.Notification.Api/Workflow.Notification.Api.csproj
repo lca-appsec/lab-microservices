@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Workflow.Notification.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

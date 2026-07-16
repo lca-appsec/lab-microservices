@@ -1,0 +1,293 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - src/services/**
+      - src/shared/**
+      - infra/**
+      - Directory.Build.props
+      - global.json
+      - .dockerignore
+      - scripts/**
+      - azure-pipelines.yml
+
+pr:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - src/services/**
+      - src/shared/**
+      - infra/**
+      - Directory.Build.props
+      - global.json
+      - .dockerignore
+      - scripts/**
+      - azure-pipelines.yml
+
+variables:
+  APP_PROJECTS: ''
+  SERVICE_ROOT: src/services
+  SHARED_ROOT: src/shared
+  TARGET_FRAMEWORK: net8.0
+  VERACODE_APP_NAME: $(Build.Repository.Name)
+  VERACODE_PACKAGE: veracode-upload.zip
+  SCA_FAIL_ON_WORKSPACE_LIMIT: 'false'
+
+stages:
+  - stage: QA_Package
+    displayName: QA - Build and Veracode Package
+    jobs:
+      - job: qa_package
+        displayName: Build, test and package
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - checkout: self
+
+          - task: UseDotNet@2
+            displayName: Setup .NET 8
+            inputs:
+              packageType: sdk
+              version: 8.0.x
+
+          - script: |
+              sudo apt-get update
+              sudo apt-get install -y zip unzip
+            displayName: Install packaging tools
+
+          - script: chmod +x scripts/*.sh
+            displayName: Make scripts executable
+
+          - script: ./scripts/build.sh
+            displayName: Build projects
+            env:
+              APP_PROJECTS: $(APP_PROJECTS)
+              SERVICE_ROOT: $(SERVICE_ROOT)
+              SHARED_ROOT: $(SHARED_ROOT)
+              TARGET_FRAMEWORK: $(TARGET_FRAMEWORK)
+
+          - script: ./scripts/package-all-services-for-veracode.sh
+            displayName: Create deduplicated Veracode package
+            env:
+              APP_PROJECTS: $(APP_PROJECTS)
+              SERVICE_ROOT: $(SERVICE_ROOT)
+              SHARED_ROOT: $(SHARED_ROOT)
+              TARGET_FRAMEWORK: $(TARGET_FRAMEWORK)
+              VERACODE_PACKAGE: $(VERACODE_PACKAGE)
+              ZIP_FILE: $(VERACODE_PACKAGE)
+
+          - script: |
+              ls -lh "$(VERACODE_PACKAGE)"
+              echo "Service projects included:"
+              cat veracode-evidence/service-projects.txt
+              echo "Shared projects included:"
+              cat veracode-evidence/shared-projects.txt
+              echo "DLL entries:"
+              unzip -Z1 "$(VERACODE_PACKAGE)" | grep -E '\.dll$' | wc -l
+              echo "Unique DLL names:"
+              unzip -Z1 "$(VERACODE_PACKAGE)" | grep -E '\.dll$' | sed 's#.*/##' | sort -u | wc -l
+              echo "Duplicate file names:"
+              if [ -s veracode-evidence/duplicate-file-names.txt ]; then
+                cat veracode-evidence/duplicate-file-names.txt
+                exit 1
+              fi
+              echo "none"
+              echo "Excluded path violations:"
+              if [ -s veracode-evidence/excluded-path-violations.txt ]; then
+                cat veracode-evidence/excluded-path-violations.txt
+                exit 1
+              fi
+              echo "none"
+            displayName: Show package evidence
+
+          - script: |
+              mkdir -p "$(Build.ArtifactStagingDirectory)/veracode-upload-package"
+              cp "$(VERACODE_PACKAGE)" "$(Build.ArtifactStagingDirectory)/veracode-upload-package/"
+              cp -R veracode-evidence "$(Build.ArtifactStagingDirectory)/veracode-upload-package/"
+            displayName: Stage Veracode package artifact
+
+          - publish: $(Build.ArtifactStagingDirectory)/veracode-upload-package
+            artifact: veracode-upload-package
+            displayName: Publish Veracode package artifact
+
+  - stage: Veracode_SAST
+    displayName: Veracode SAST - Upload and Scan
+    dependsOn: QA_Package
+    jobs:
+      - job: veracode_sast
+        displayName: Upload and scan
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - download: current
+            artifact: veracode-upload-package
+
+          - script: |
+              docker run --rm \
+                --entrypoint "" \
+                -v "$(Pipeline.Workspace)/veracode-upload-package:/scan" \
+                veracode/api-wrapper-java \
+                java -jar /opt/veracode/api-wrapper.jar \
+                  -action UploadAndScan \
+                  -vid "$(VERACODE_API_ID)" \
+                  -vkey "$(VERACODE_API_KEY)" \
+                  -appname "$(VERACODE_APP_NAME)" \
+                  -createprofile true \
+                  -filepath "/scan/$(VERACODE_PACKAGE)" \
+                  -version "Azure-$(Build.BuildId)-$(Build.SourceVersion)" \
+                  -criticality VeryHigh \
+                  -scanallnonfataltoplevelmodules true \
+                  -includenewmodules true \
+                  -deleteincompletescan 1 \
+                  -maxretrycount 3 \
+                  -scanpollinginterval 120 \
+                  -scantimeout 60
+            displayName: Veracode Upload and Scan
+
+  - stage: Veracode_SCA
+    displayName: Veracode SCA - Agent-Based Scan
+    dependsOn: QA_Package
+    jobs:
+      - job: veracode_sca
+        displayName: SCA scan
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - checkout: self
+
+          - task: UseDotNet@2
+            displayName: Setup .NET 8
+            inputs:
+              packageType: sdk
+              version: 8.0.x
+
+          - script: chmod +x scripts/*.sh
+            displayName: Make scripts executable
+
+          - script: ./scripts/create-sca-aggregate-project.sh
+            displayName: Create single SCA aggregate project
+            env:
+              APP_PROJECTS: $(APP_PROJECTS)
+              SERVICE_ROOT: $(SERVICE_ROOT)
+              SHARED_ROOT: $(SHARED_ROOT)
+              TARGET_FRAMEWORK: $(TARGET_FRAMEWORK)
+
+          - script: |
+              find . -type d \( -name bin -o -name obj -o -name publish -o -name publish-veracode -o -name veracode-scan \) -prune -exec rm -rf {} +
+              rm -f veracode-upload.zip docker-images.txt
+            displayName: Remove build artifacts before SCA
+
+          - script: |
+              set -o pipefail
+              touch sca-results.txt
+              unset SRCCLR_WORKSPACE
+              unset SRCCLR_WORKSPACE_ID
+              unset SRCCLR_WORKSPACE_NAME
+              unset SRCCLR_WORKSPACE_SLUG
+              echo "SCA environment variables enabled:"
+              env | cut -d= -f1 | grep '^SRCCLR_' | sort
+              set +e
+              curl -sSL https://download.sourceclear.com/ci.sh \
+                | sh -s -- scan sca-scan --allow-dirty --skip-vms \
+                2>&1 | tee sca-results.txt
+              sca_exit="${PIPESTATUS[1]}"
+              set -e
+
+              if grep -q "Workspace has reached maximum number of projects" sca-results.txt && [ "${SCA_FAIL_ON_WORKSPACE_LIMIT:-false}" != "true" ]; then
+                echo "##vso[task.logissue type=warning]Veracode SCA workspace reached the maximum number of projects. Clean up projects, increase the workspace limit, or use a token from another workspace. Continuing because SCA_FAIL_ON_WORKSPACE_LIMIT is false."
+                exit 0
+              fi
+
+              exit "$sca_exit"
+            displayName: Veracode SCA
+            env:
+              SRCCLR_API_TOKEN: $(SRCCLR_API_TOKEN)
+              SCA_FAIL_ON_WORKSPACE_LIMIT: $(SCA_FAIL_ON_WORKSPACE_LIMIT)
+
+          - publish: sca-results.txt
+            artifact: veracode-sca-results
+            displayName: Publish SCA results
+            condition: always()
+
+          - publish: sca-evidence
+            artifact: veracode-sca-evidence
+            displayName: Publish SCA evidence
+            condition: always()
+
+  - stage: Veracode_IaC
+    displayName: Veracode IaC - CLI Scan
+    dependsOn: QA_Package
+    jobs:
+      - job: veracode_iac
+        displayName: IaC scan
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - checkout: self
+
+          - script: chmod +x scripts/*.sh
+            displayName: Make scripts executable
+
+          - script: |
+              mkdir -p veracode-results
+              ./scripts/veracode-cli-scans.sh
+            displayName: Run Veracode CLI IaC scan
+            env:
+              VERACODE_API_KEY_ID: $(VERACODE_API_ID)
+              VERACODE_API_KEY_SECRET: $(VERACODE_API_KEY)
+              IAC_DIR: .
+
+          - publish: veracode-results
+            artifact: veracode-iac-results
+            displayName: Publish Veracode IaC results
+            condition: always()
+
+  - stage: Docker_Build
+    displayName: Docker - Build Images
+    dependsOn:
+      - Veracode_SAST
+      - Veracode_SCA
+      - Veracode_IaC
+    jobs:
+      - job: docker_build
+        displayName: Build service images
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - checkout: self
+
+          - script: chmod +x scripts/*.sh
+            displayName: Make scripts executable
+
+          - script: |
+              {
+                for csproj in $APP_PROJECTS; do printf '%s\n' "$csproj"; done
+                if [ -d "$SERVICE_ROOT" ]; then
+                  find "$SERVICE_ROOT" \
+                    -path "*/bin" -prune -o \
+                    -path "*/obj" -prune -o \
+                    -name "*.csproj" -type f -print
+                fi
+              } | sort -u | while read -r csproj; do
+                  test -f "$(dirname "$csproj")/Dockerfile"
+                done
+            displayName: Validate service Dockerfiles
+            env:
+              APP_PROJECTS: $(APP_PROJECTS)
+              SERVICE_ROOT: $(SERVICE_ROOT)
+
+          - script: ./scripts/build-service-images.sh
+            displayName: Build Docker image for each microservice
+            env:
+              APP_PROJECTS: $(APP_PROJECTS)
+              SERVICE_ROOT: $(SERVICE_ROOT)
+              IMAGE_PREFIX: $(Build.Repository.Name)
+              IMAGE_TAG: azure-$(Build.BuildId)-$(Build.SourceVersion)
+
+          - publish: docker-images.txt
+            artifact: docker-images
+            displayName: Publish Docker image list

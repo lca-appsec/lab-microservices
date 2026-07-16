@@ -1,0 +1,109 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ZenithApproval.Api/1.0.0": {
+        "dependencies": {
+          "Core.Security.Api": "1.0.0",
+          "Identity.Claims.Api": "1.0.0",
+          "Identity.Tokens.Api": "1.0.0",
+          "Integration.Email.Api": "1.0.0",
+          "Workflow.Approval.Api": "1.0.0",
+          "Workflow.Notification.Api": "1.0.0"
+        },
+        "runtime": {
+          "ZenithApproval.Api.dll": {}
+        }
+      },
+      "Core.Security.Api/1.0.0": {
+        "runtime": {
+          "Core.Security.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Identity.Claims.Api/1.0.0": {
+        "runtime": {
+          "Identity.Claims.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Identity.Tokens.Api/1.0.0": {
+        "runtime": {
+          "Identity.Tokens.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Integration.Email.Api/1.0.0": {
+        "runtime": {
+          "Integration.Email.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Workflow.Approval.Api/1.0.0": {
+        "runtime": {
+          "Workflow.Approval.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Workflow.Notification.Api/1.0.0": {
+        "runtime": {
+          "Workflow.Notification.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZenithApproval.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Security.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Identity.Claims.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Identity.Tokens.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Integration.Email.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Workflow.Approval.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Workflow.Notification.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

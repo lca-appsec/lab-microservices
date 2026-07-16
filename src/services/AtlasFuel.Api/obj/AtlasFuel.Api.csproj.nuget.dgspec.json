@@ -1,0 +1,697 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AtlasFuel.Api/AtlasFuel.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AtlasFuel.Api/AtlasFuel.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AtlasFuel.Api/AtlasFuel.Api.csproj",
+        "projectName": "AtlasFuel.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AtlasFuel.Api/AtlasFuel.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AtlasFuel.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/Core.Contracts.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/Core.Contracts.Api.csproj"
+              },
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/Core.Security.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/Core.Security.Api.csproj"
+              },
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fleet.Api/Domain.Fleet.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fleet.Api/Domain.Fleet.Api.csproj"
+              },
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fuel.Api/Domain.Fuel.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fuel.Api/Domain.Fuel.Api.csproj"
+              },
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/Observability.Audit.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/Observability.Audit.Api.csproj"
+              },
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj"
+              },
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1901",
+            "NU1902",
+            "NU1903",
+            "NU1904"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.3.31.11, )"
+            },
+            "DotNetZip": {
+              "target": "Package",
+              "version": "[1.16.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.4, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/Core.Contracts.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/Core.Contracts.Api.csproj",
+        "projectName": "Core.Contracts.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/Core.Contracts.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/Core.Security.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/Core.Security.Api.csproj",
+        "projectName": "Core.Security.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/Core.Security.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1901",
+            "NU1902",
+            "NU1903",
+            "NU1904"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "jose-jwt": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fleet.Api/Domain.Fleet.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fleet.Api/Domain.Fleet.Api.csproj",
+        "projectName": "Domain.Fleet.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fleet.Api/Domain.Fleet.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fleet.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fuel.Api/Domain.Fuel.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fuel.Api/Domain.Fuel.Api.csproj",
+        "projectName": "Domain.Fuel.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fuel.Api/Domain.Fuel.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Fuel.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/Observability.Audit.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/Observability.Audit.Api.csproj",
+        "projectName": "Observability.Audit.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/Observability.Audit.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj",
+        "projectName": "Pricing.Rules.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj",
+        "projectName": "Queue.Messaging.Api",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj",
+        "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

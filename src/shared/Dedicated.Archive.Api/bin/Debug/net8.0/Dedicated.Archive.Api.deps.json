@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Dedicated.Archive.Api/1.0.0": {
+        "runtime": {
+          "Dedicated.Archive.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dedicated.Archive.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

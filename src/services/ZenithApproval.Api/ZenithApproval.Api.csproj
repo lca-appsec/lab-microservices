@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Core.Security.Api/Core.Security.Api.csproj" />
+    <ProjectReference Include="../../shared/Identity.Claims.Api/Identity.Claims.Api.csproj" />
+    <ProjectReference Include="../../shared/Identity.Tokens.Api/Identity.Tokens.Api.csproj" />
+    <ProjectReference Include="../../shared/Workflow.Approval.Api/Workflow.Approval.Api.csproj" />
+    <ProjectReference Include="../../shared/Workflow.Notification.Api/Workflow.Notification.Api.csproj" />
+    <ProjectReference Include="../../shared/Integration.Email.Api/Integration.Email.Api.csproj" />
+  </ItemGroup>
+</Project>

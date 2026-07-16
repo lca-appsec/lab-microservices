@@ -1,0 +1,8 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/Core.Security.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/Core.Security.Api.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/Core.Security.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/Microsoft.IdentityModel.Logging.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/Microsoft.IdentityModel.Tokens.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/Newtonsoft.Json.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/Core.Security.Api/System.IdentityModel.Tokens.Jwt.dll

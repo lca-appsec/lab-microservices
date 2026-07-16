@@ -1,0 +1,11 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/bin/Release/net8.0/Shared.Module08.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/bin/Release/net8.0/Shared.Module08.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/bin/Release/net8.0/Shared.Module08.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/Shared.Module08.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/Shared.Module08.AssemblyInfoInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/Shared.Module08.AssemblyInfo.cs
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/Shared.Module08.csproj.CoreCompileInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/Shared.Module08.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/refint/Shared.Module08.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/Shared.Module08.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/obj/Release/net8.0/ref/Shared.Module08.dll

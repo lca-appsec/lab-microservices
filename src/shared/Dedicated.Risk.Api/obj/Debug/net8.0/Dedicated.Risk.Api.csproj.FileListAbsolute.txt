@@ -1,0 +1,11 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/bin/Debug/net8.0/Dedicated.Risk.Api.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/bin/Debug/net8.0/Dedicated.Risk.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/bin/Debug/net8.0/Dedicated.Risk.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/Dedicated.Risk.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/Dedicated.Risk.Api.AssemblyInfoInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/Dedicated.Risk.Api.AssemblyInfo.cs
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/Dedicated.Risk.Api.csproj.CoreCompileInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/Dedicated.Risk.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/refint/Dedicated.Risk.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/Dedicated.Risk.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Risk.Api/obj/Debug/net8.0/ref/Dedicated.Risk.Api.dll

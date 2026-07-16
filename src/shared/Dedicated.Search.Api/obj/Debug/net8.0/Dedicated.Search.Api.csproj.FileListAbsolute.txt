@@ -1,0 +1,11 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/bin/Debug/net8.0/Dedicated.Search.Api.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/bin/Debug/net8.0/Dedicated.Search.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/bin/Debug/net8.0/Dedicated.Search.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/Dedicated.Search.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/Dedicated.Search.Api.AssemblyInfoInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/Dedicated.Search.Api.AssemblyInfo.cs
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/Dedicated.Search.Api.csproj.CoreCompileInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/Dedicated.Search.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/refint/Dedicated.Search.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/Dedicated.Search.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.Search.Api/obj/Debug/net8.0/ref/Dedicated.Search.Api.dll

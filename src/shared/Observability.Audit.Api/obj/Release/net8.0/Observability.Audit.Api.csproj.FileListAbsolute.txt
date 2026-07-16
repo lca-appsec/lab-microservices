@@ -1,0 +1,11 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/bin/Release/net8.0/Observability.Audit.Api.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/bin/Release/net8.0/Observability.Audit.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/bin/Release/net8.0/Observability.Audit.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/Observability.Audit.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/Observability.Audit.Api.AssemblyInfoInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/Observability.Audit.Api.AssemblyInfo.cs
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/Observability.Audit.Api.csproj.CoreCompileInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/Observability.Audit.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/refint/Observability.Audit.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/Observability.Audit.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Audit.Api/obj/Release/net8.0/ref/Observability.Audit.Api.dll

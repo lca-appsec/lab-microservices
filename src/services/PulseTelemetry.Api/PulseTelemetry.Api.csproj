@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Observability.Audit.Api/Observability.Audit.Api.csproj" />
+    <ProjectReference Include="../../shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj" />
+    <ProjectReference Include="../../shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj" />
+    <ProjectReference Include="../../shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj" />
+    <ProjectReference Include="../../shared/Cache.Distributed.Api/Cache.Distributed.Api.csproj" />
+  </ItemGroup>
+</Project>

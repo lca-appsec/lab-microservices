@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "cache.distributed.api": {
+        "type": "Project"
+      },
+      "observability.audit.api": {
+        "type": "Project"
+      },
+      "observability.metrics.api": {
+        "type": "Project"
+      },
+      "observability.tracing.api": {
+        "type": "Project"
+      },
+      "queue.messaging.api": {
+        "type": "Project"
+      }
+    }
+  }
+}

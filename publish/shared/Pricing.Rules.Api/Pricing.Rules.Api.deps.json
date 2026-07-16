@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Pricing.Rules.Api/1.0.0": {
+        "runtime": {
+          "Pricing.Rules.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pricing.Rules.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

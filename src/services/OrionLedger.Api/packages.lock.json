@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "data.abstractions.api": {
+        "type": "Project"
+      },
+      "data.sqlbridge.api": {
+        "type": "Project"
+      },
+      "domain.payment.api": {
+        "type": "Project"
+      },
+      "integration.bank.api": {
+        "type": "Project"
+      },
+      "reconciliation.engine.api": {
+        "type": "Project"
+      },
+      "reporting.query.api": {
+        "type": "Project"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Document.Signature.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------
+VeracodeJavaAPI v26.3.19.0 cUnknown
+Action: UploadAndScan
+--------------------------------------------------------------------------------
+[2026.06.23 18:03:43.516] Transaction ID: [eed43917-c35e-4d0e-bf3b-e644a1302783]
+[2026.06.23 18:03:46.215] 
+[2026.06.23 18:03:46.215] Server returned HTTP response code: 401 for URL: https://analysiscenter.veracode.com/api/5.0/getapplist.do
+[2026.06.23 18:03:46.215] Please make sure that all of the following are true: 
+[2026.06.23 18:03:46.215] 1. The login credentials are valid.
+[2026.06.23 18:03:46.215] 2. The account is an API account with sufficient privilege.
+[2026.06.23 18:03:46.215] 3. The account is not locked.
+[2026.06.23 18:03:46.215] 4. This machine's internet-facing IP address is not restricted.
+[2026.06.23 18:03:46.215] 5. Check if the system time is synchronized with the NTP server.
+[2026.06.23 18:03:46.215] 

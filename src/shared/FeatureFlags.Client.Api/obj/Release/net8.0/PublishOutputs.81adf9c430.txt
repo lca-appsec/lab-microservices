@@ -1,0 +1,3 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/.packaging/publish/shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.pdb

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Integration.Email.Api/1.0.0": {
+        "runtime": {
+          "Integration.Email.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Integration.Email.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

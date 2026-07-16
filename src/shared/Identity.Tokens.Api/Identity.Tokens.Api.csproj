@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Identity.Tokens.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

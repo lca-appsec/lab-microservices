@@ -1,0 +1,15 @@
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/appsettings.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/PulseTelemetry.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/PulseTelemetry.Api.deps.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/PulseTelemetry.Api.runtimeconfig.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/PulseTelemetry.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Cache.Distributed.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Observability.Audit.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Observability.Metrics.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Observability.Tracing.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Queue.Messaging.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Observability.Audit.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Observability.Metrics.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Observability.Tracing.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Queue.Messaging.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/5189066917325633583/Cache.Distributed.Api.pdb

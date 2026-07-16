@@ -1,0 +1,17 @@
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/appsettings.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/VertexPricing.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/VertexPricing.Api.deps.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/VertexPricing.Api.runtimeconfig.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/VertexPricing.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Cache.Local.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Core.Contracts.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Core.Validation.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/FeatureFlags.Client.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Pricing.Rules.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Pricing.Tax.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Core.Contracts.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Core.Validation.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Pricing.Rules.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Pricing.Tax.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/FeatureFlags.Client.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/1360254303838413186/Cache.Local.Api.pdb

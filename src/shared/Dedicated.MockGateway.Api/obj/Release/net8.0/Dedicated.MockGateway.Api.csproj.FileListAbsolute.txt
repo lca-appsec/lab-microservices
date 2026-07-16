@@ -1,0 +1,11 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/bin/Release/net8.0/Dedicated.MockGateway.Api.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/bin/Release/net8.0/Dedicated.MockGateway.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/bin/Release/net8.0/Dedicated.MockGateway.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/Dedicated.MockGateway.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/Dedicated.MockGateway.Api.AssemblyInfoInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/Dedicated.MockGateway.Api.AssemblyInfo.cs
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/Dedicated.MockGateway.Api.csproj.CoreCompileInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/Dedicated.MockGateway.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/refint/Dedicated.MockGateway.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/Dedicated.MockGateway.Api.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Dedicated.MockGateway.Api/obj/Release/net8.0/ref/Dedicated.MockGateway.Api.dll

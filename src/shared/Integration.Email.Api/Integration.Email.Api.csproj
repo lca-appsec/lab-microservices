@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Integration.Email.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

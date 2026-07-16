@@ -1,0 +1,774 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Shared.Module01/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module01.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module01.dll": {}
+        }
+      },
+      "Shared.Module02/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module02.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module02.dll": {}
+        }
+      },
+      "Shared.Module03/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module03.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module03.dll": {}
+        }
+      },
+      "Shared.Module04/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module04.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module04.dll": {}
+        }
+      },
+      "Shared.Module05/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module05.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module05.dll": {}
+        }
+      },
+      "Shared.Module06/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module06.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module06.dll": {}
+        }
+      },
+      "Shared.Module07/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module07.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module07.dll": {}
+        }
+      },
+      "Shared.Module08/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module08.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module08.dll": {}
+        }
+      },
+      "Shared.Module09/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module09.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module09.dll": {}
+        }
+      },
+      "Shared.Module10/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module10.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module10.dll": {}
+        }
+      },
+      "Shared.Module11/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module11.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module11.dll": {}
+        }
+      },
+      "Shared.Module12/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module12.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module12.dll": {}
+        }
+      },
+      "Shared.Module13/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module13.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module13.dll": {}
+        }
+      },
+      "Shared.Module14/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module14.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module14.dll": {}
+        }
+      },
+      "Shared.Module15/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module15.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module15.dll": {}
+        }
+      },
+      "Shared.Module16/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module16.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module16.dll": {}
+        }
+      },
+      "Shared.Module17/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module17.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module17.dll": {}
+        }
+      },
+      "Shared.Module18/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module18.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module18.dll": {}
+        }
+      },
+      "Shared.Module19/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module19.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module19.dll": {}
+        }
+      },
+      "Shared.Module20/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module20.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module20.dll": {}
+        }
+      },
+      "Shared.Module21/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module21.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module21.dll": {}
+        }
+      },
+      "Shared.Module22/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module22.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module22.dll": {}
+        }
+      },
+      "Shared.Module23/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module23.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module23.dll": {}
+        }
+      },
+      "Shared.Module24/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module24.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module24.dll": {}
+        }
+      },
+      "Shared.Module25/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module25.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module25.dll": {}
+        }
+      },
+      "Shared.Module26/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module26.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module26.dll": {}
+        }
+      },
+      "Shared.Module27/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module27.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module27.dll": {}
+        }
+      },
+      "Shared.Module28/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module28.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module28.dll": {}
+        }
+      },
+      "Shared.Module29/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module29.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module29.dll": {}
+        }
+      },
+      "Shared.Module30/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module30.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module30.dll": {}
+        }
+      },
+      "Shared.Module31/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module31.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module31.dll": {}
+        }
+      },
+      "Shared.Module32/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module32.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module32.dll": {}
+        }
+      },
+      "Shared.Module33/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module33.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module33.dll": {}
+        }
+      },
+      "Shared.Module34/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module34.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module34.dll": {}
+        }
+      },
+      "Shared.Module35/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module35.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module35.dll": {}
+        }
+      },
+      "Shared.Module36/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.Module36.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Module36.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Shared.Module01/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module01/Shared.Module01.csproj",
+      "msbuildProject": "../../shared/Shared.Module01/Shared.Module01.csproj"
+    },
+    "Shared.Module02/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module02/Shared.Module02.csproj",
+      "msbuildProject": "../../shared/Shared.Module02/Shared.Module02.csproj"
+    },
+    "Shared.Module03/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module03/Shared.Module03.csproj",
+      "msbuildProject": "../../shared/Shared.Module03/Shared.Module03.csproj"
+    },
+    "Shared.Module04/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module04/Shared.Module04.csproj",
+      "msbuildProject": "../../shared/Shared.Module04/Shared.Module04.csproj"
+    },
+    "Shared.Module05/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module05/Shared.Module05.csproj",
+      "msbuildProject": "../../shared/Shared.Module05/Shared.Module05.csproj"
+    },
+    "Shared.Module06/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module06/Shared.Module06.csproj",
+      "msbuildProject": "../../shared/Shared.Module06/Shared.Module06.csproj"
+    },
+    "Shared.Module07/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module07/Shared.Module07.csproj",
+      "msbuildProject": "../../shared/Shared.Module07/Shared.Module07.csproj"
+    },
+    "Shared.Module08/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module08/Shared.Module08.csproj",
+      "msbuildProject": "../../shared/Shared.Module08/Shared.Module08.csproj"
+    },
+    "Shared.Module09/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module09/Shared.Module09.csproj",
+      "msbuildProject": "../../shared/Shared.Module09/Shared.Module09.csproj"
+    },
+    "Shared.Module10/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module10/Shared.Module10.csproj",
+      "msbuildProject": "../../shared/Shared.Module10/Shared.Module10.csproj"
+    },
+    "Shared.Module11/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module11/Shared.Module11.csproj",
+      "msbuildProject": "../../shared/Shared.Module11/Shared.Module11.csproj"
+    },
+    "Shared.Module12/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module12/Shared.Module12.csproj",
+      "msbuildProject": "../../shared/Shared.Module12/Shared.Module12.csproj"
+    },
+    "Shared.Module13/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module13/Shared.Module13.csproj",
+      "msbuildProject": "../../shared/Shared.Module13/Shared.Module13.csproj"
+    },
+    "Shared.Module14/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module14/Shared.Module14.csproj",
+      "msbuildProject": "../../shared/Shared.Module14/Shared.Module14.csproj"
+    },
+    "Shared.Module15/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module15/Shared.Module15.csproj",
+      "msbuildProject": "../../shared/Shared.Module15/Shared.Module15.csproj"
+    },
+    "Shared.Module16/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module16/Shared.Module16.csproj",
+      "msbuildProject": "../../shared/Shared.Module16/Shared.Module16.csproj"
+    },
+    "Shared.Module17/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module17/Shared.Module17.csproj",
+      "msbuildProject": "../../shared/Shared.Module17/Shared.Module17.csproj"
+    },
+    "Shared.Module18/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module18/Shared.Module18.csproj",
+      "msbuildProject": "../../shared/Shared.Module18/Shared.Module18.csproj"
+    },
+    "Shared.Module19/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module19/Shared.Module19.csproj",
+      "msbuildProject": "../../shared/Shared.Module19/Shared.Module19.csproj"
+    },
+    "Shared.Module20/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module20/Shared.Module20.csproj",
+      "msbuildProject": "../../shared/Shared.Module20/Shared.Module20.csproj"
+    },
+    "Shared.Module21/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module21/Shared.Module21.csproj",
+      "msbuildProject": "../../shared/Shared.Module21/Shared.Module21.csproj"
+    },
+    "Shared.Module22/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module22/Shared.Module22.csproj",
+      "msbuildProject": "../../shared/Shared.Module22/Shared.Module22.csproj"
+    },
+    "Shared.Module23/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module23/Shared.Module23.csproj",
+      "msbuildProject": "../../shared/Shared.Module23/Shared.Module23.csproj"
+    },
+    "Shared.Module24/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module24/Shared.Module24.csproj",
+      "msbuildProject": "../../shared/Shared.Module24/Shared.Module24.csproj"
+    },
+    "Shared.Module25/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module25/Shared.Module25.csproj",
+      "msbuildProject": "../../shared/Shared.Module25/Shared.Module25.csproj"
+    },
+    "Shared.Module26/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module26/Shared.Module26.csproj",
+      "msbuildProject": "../../shared/Shared.Module26/Shared.Module26.csproj"
+    },
+    "Shared.Module27/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module27/Shared.Module27.csproj",
+      "msbuildProject": "../../shared/Shared.Module27/Shared.Module27.csproj"
+    },
+    "Shared.Module28/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module28/Shared.Module28.csproj",
+      "msbuildProject": "../../shared/Shared.Module28/Shared.Module28.csproj"
+    },
+    "Shared.Module29/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module29/Shared.Module29.csproj",
+      "msbuildProject": "../../shared/Shared.Module29/Shared.Module29.csproj"
+    },
+    "Shared.Module30/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module30/Shared.Module30.csproj",
+      "msbuildProject": "../../shared/Shared.Module30/Shared.Module30.csproj"
+    },
+    "Shared.Module31/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module31/Shared.Module31.csproj",
+      "msbuildProject": "../../shared/Shared.Module31/Shared.Module31.csproj"
+    },
+    "Shared.Module32/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module32/Shared.Module32.csproj",
+      "msbuildProject": "../../shared/Shared.Module32/Shared.Module32.csproj"
+    },
+    "Shared.Module33/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module33/Shared.Module33.csproj",
+      "msbuildProject": "../../shared/Shared.Module33/Shared.Module33.csproj"
+    },
+    "Shared.Module34/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module34/Shared.Module34.csproj",
+      "msbuildProject": "../../shared/Shared.Module34/Shared.Module34.csproj"
+    },
+    "Shared.Module35/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module35/Shared.Module35.csproj",
+      "msbuildProject": "../../shared/Shared.Module35/Shared.Module35.csproj"
+    },
+    "Shared.Module36/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Shared.Module36/Shared.Module36.csproj",
+      "msbuildProject": "../../shared/Shared.Module36/Shared.Module36.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Shared.Module01 >= 1.0.0",
+      "Shared.Module02 >= 1.0.0",
+      "Shared.Module03 >= 1.0.0",
+      "Shared.Module04 >= 1.0.0",
+      "Shared.Module05 >= 1.0.0",
+      "Shared.Module06 >= 1.0.0",
+      "Shared.Module07 >= 1.0.0",
+      "Shared.Module08 >= 1.0.0",
+      "Shared.Module09 >= 1.0.0",
+      "Shared.Module10 >= 1.0.0",
+      "Shared.Module11 >= 1.0.0",
+      "Shared.Module12 >= 1.0.0",
+      "Shared.Module13 >= 1.0.0",
+      "Shared.Module14 >= 1.0.0",
+      "Shared.Module15 >= 1.0.0",
+      "Shared.Module16 >= 1.0.0",
+      "Shared.Module17 >= 1.0.0",
+      "Shared.Module18 >= 1.0.0",
+      "Shared.Module19 >= 1.0.0",
+      "Shared.Module20 >= 1.0.0",
+      "Shared.Module21 >= 1.0.0",
+      "Shared.Module22 >= 1.0.0",
+      "Shared.Module23 >= 1.0.0",
+      "Shared.Module24 >= 1.0.0",
+      "Shared.Module25 >= 1.0.0",
+      "Shared.Module26 >= 1.0.0",
+      "Shared.Module27 >= 1.0.0",
+      "Shared.Module28 >= 1.0.0",
+      "Shared.Module29 >= 1.0.0",
+      "Shared.Module30 >= 1.0.0",
+      "Shared.Module31 >= 1.0.0",
+      "Shared.Module32 >= 1.0.0",
+      "Shared.Module33 >= 1.0.0",
+      "Shared.Module34 >= 1.0.0",
+      "Shared.Module35 >= 1.0.0",
+      "Shared.Module36 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/luis.araujo/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/Service04.Api/Service04.Api.csproj",
+      "projectName": "Service04.Api",
+      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/Service04.Api/Service04.Api.csproj",
+      "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+      "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/Service04.Api/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module01/Shared.Module01.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module01/Shared.Module01.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module02/Shared.Module02.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module02/Shared.Module02.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module03/Shared.Module03.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module03/Shared.Module03.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module04/Shared.Module04.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module04/Shared.Module04.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module05/Shared.Module05.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module05/Shared.Module05.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module06/Shared.Module06.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module06/Shared.Module06.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module07/Shared.Module07.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module07/Shared.Module07.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/Shared.Module08.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/Shared.Module08.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module09/Shared.Module09.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module09/Shared.Module09.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module10/Shared.Module10.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module10/Shared.Module10.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module11/Shared.Module11.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module11/Shared.Module11.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module12/Shared.Module12.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module12/Shared.Module12.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module13/Shared.Module13.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module13/Shared.Module13.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module14/Shared.Module14.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module14/Shared.Module14.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module15/Shared.Module15.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module15/Shared.Module15.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module16/Shared.Module16.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module16/Shared.Module16.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module17/Shared.Module17.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module17/Shared.Module17.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module18/Shared.Module18.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module18/Shared.Module18.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module19/Shared.Module19.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module19/Shared.Module19.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module20/Shared.Module20.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module20/Shared.Module20.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module21/Shared.Module21.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module21/Shared.Module21.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module22/Shared.Module22.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module22/Shared.Module22.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module23/Shared.Module23.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module23/Shared.Module23.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module24/Shared.Module24.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module24/Shared.Module24.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module25/Shared.Module25.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module25/Shared.Module25.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module26/Shared.Module26.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module26/Shared.Module26.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module27/Shared.Module27.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module27/Shared.Module27.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module28/Shared.Module28.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module28/Shared.Module28.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module29/Shared.Module29.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module29/Shared.Module29.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module30/Shared.Module30.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module30/Shared.Module30.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module31/Shared.Module31.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module31/Shared.Module31.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module32/Shared.Module32.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module32/Shared.Module32.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module33/Shared.Module33.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module33/Shared.Module33.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module34/Shared.Module34.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module34/Shared.Module34.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module35/Shared.Module35.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module35/Shared.Module35.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

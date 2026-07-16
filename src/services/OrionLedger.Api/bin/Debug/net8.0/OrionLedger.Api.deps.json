@@ -1,0 +1,109 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OrionLedger.Api/1.0.0": {
+        "dependencies": {
+          "Data.Abstractions.Api": "1.0.0",
+          "Data.SqlBridge.Api": "1.0.0",
+          "Domain.Payment.Api": "1.0.0",
+          "Integration.Bank.Api": "1.0.0",
+          "Reconciliation.Engine.Api": "1.0.0",
+          "Reporting.Query.Api": "1.0.0"
+        },
+        "runtime": {
+          "OrionLedger.Api.dll": {}
+        }
+      },
+      "Data.Abstractions.Api/1.0.0": {
+        "runtime": {
+          "Data.Abstractions.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Data.SqlBridge.Api/1.0.0": {
+        "runtime": {
+          "Data.SqlBridge.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Domain.Payment.Api/1.0.0": {
+        "runtime": {
+          "Domain.Payment.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Integration.Bank.Api/1.0.0": {
+        "runtime": {
+          "Integration.Bank.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Reconciliation.Engine.Api/1.0.0": {
+        "runtime": {
+          "Reconciliation.Engine.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Reporting.Query.Api/1.0.0": {
+        "runtime": {
+          "Reporting.Query.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OrionLedger.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Data.Abstractions.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Data.SqlBridge.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Payment.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Integration.Bank.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reconciliation.Engine.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reporting.Query.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

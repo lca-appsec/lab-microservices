@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Core.Contracts.Api/Core.Contracts.Api.csproj" />
+    <ProjectReference Include="../../shared/Core.Validation.Api/Core.Validation.Api.csproj" />
+    <ProjectReference Include="../../shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj" />
+    <ProjectReference Include="../../shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj" />
+    <ProjectReference Include="../../shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.csproj" />
+    <ProjectReference Include="../../shared/Cache.Local.Api/Cache.Local.Api.csproj" />
+  </ItemGroup>
+</Project>

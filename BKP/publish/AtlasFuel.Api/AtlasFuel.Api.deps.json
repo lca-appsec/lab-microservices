@@ -1,0 +1,123 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AtlasFuel.Api/1.0.0": {
+        "dependencies": {
+          "Core.Contracts.Api": "1.0.0",
+          "Core.Security.Api": "1.0.0",
+          "Domain.Fleet.Api": "1.0.0",
+          "Domain.Fuel.Api": "1.0.0",
+          "Observability.Audit.Api": "1.0.0",
+          "Pricing.Rules.Api": "1.0.0",
+          "Queue.Messaging.Api": "1.0.0"
+        },
+        "runtime": {
+          "AtlasFuel.Api.dll": {}
+        }
+      },
+      "Core.Contracts.Api/1.0.0": {
+        "runtime": {
+          "Core.Contracts.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Core.Security.Api/1.0.0": {
+        "runtime": {
+          "Core.Security.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Domain.Fleet.Api/1.0.0": {
+        "runtime": {
+          "Domain.Fleet.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Domain.Fuel.Api/1.0.0": {
+        "runtime": {
+          "Domain.Fuel.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Observability.Audit.Api/1.0.0": {
+        "runtime": {
+          "Observability.Audit.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Pricing.Rules.Api/1.0.0": {
+        "runtime": {
+          "Pricing.Rules.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Queue.Messaging.Api/1.0.0": {
+        "runtime": {
+          "Queue.Messaging.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AtlasFuel.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Contracts.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Security.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Fleet.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Fuel.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Observability.Audit.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pricing.Rules.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Queue.Messaging.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "VertexPricing.Api/1.0.0": {
+        "dependencies": {
+          "Cache.Local.Api": "1.0.0",
+          "Core.Contracts.Api": "1.0.0",
+          "Core.Validation.Api": "1.0.0",
+          "FeatureFlags.Client.Api": "1.0.0",
+          "Pricing.Rules.Api": "1.0.0",
+          "Pricing.Tax.Api": "1.0.0"
+        },
+        "runtime": {
+          "VertexPricing.Api.dll": {}
+        }
+      },
+      "Cache.Local.Api/1.0.0": {
+        "runtime": {
+          "Cache.Local.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Core.Contracts.Api/1.0.0": {
+        "runtime": {
+          "Core.Contracts.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Core.Validation.Api/1.0.0": {
+        "runtime": {
+          "Core.Validation.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FeatureFlags.Client.Api/1.0.0": {
+        "runtime": {
+          "FeatureFlags.Client.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Pricing.Rules.Api/1.0.0": {
+        "runtime": {
+          "Pricing.Rules.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Pricing.Tax.Api/1.0.0": {
+        "runtime": {
+          "Pricing.Tax.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VertexPricing.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cache.Local.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Contracts.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Validation.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FeatureFlags.Client.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pricing.Rules.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pricing.Tax.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

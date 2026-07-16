@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Shared.Module17</AssemblyName>
+  </PropertyGroup>
+</Project>

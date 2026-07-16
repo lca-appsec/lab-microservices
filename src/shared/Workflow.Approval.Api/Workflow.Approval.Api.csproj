@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Workflow.Approval.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

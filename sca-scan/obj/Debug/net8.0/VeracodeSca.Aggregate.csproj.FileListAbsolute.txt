@@ -1,0 +1,12 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/bin/Debug/net8.0/VeracodeSca.Aggregate.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/bin/Debug/net8.0/VeracodeSca.Aggregate.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/bin/Debug/net8.0/VeracodeSca.Aggregate.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/VeracodeSca.Aggregate.csproj.AssemblyReference.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/VeracodeSca.Aggregate.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/VeracodeSca.Aggregate.AssemblyInfoInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/VeracodeSca.Aggregate.AssemblyInfo.cs
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/VeracodeSca.Aggregate.csproj.CoreCompileInputs.cache
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/VeracodeSca.Aggregate.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/refint/VeracodeSca.Aggregate.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/VeracodeSca.Aggregate.pdb
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/Debug/net8.0/ref/VeracodeSca.Aggregate.dll

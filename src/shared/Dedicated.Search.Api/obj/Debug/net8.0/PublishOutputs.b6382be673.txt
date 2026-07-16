@@ -1,0 +1,3 @@
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17282612742008035054/Dedicated.Search.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17282612742008035054/Dedicated.Search.Api.deps.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17282612742008035054/Dedicated.Search.Api.pdb

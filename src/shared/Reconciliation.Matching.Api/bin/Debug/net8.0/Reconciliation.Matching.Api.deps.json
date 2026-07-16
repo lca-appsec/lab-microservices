@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Reconciliation.Matching.Api/1.0.0": {
+        "runtime": {
+          "Reconciliation.Matching.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reconciliation.Matching.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

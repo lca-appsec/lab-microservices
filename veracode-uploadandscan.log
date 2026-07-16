@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------
+VeracodeJavaAPI v26.3.19.0 cUnknown
+Action: UploadAndScan
+--------------------------------------------------------------------------------
+[2026.06.23 18:01:04.411] Transaction ID: [846f5f7d-a258-4ceb-9478-3b0e977ea872]
+[2026.06.23 18:01:04.540] 
+[2026.06.23 18:01:04.540] UnknownHostException: analysiscenter.veracode.com
+[2026.06.23 18:01:04.540] Note: Do not include the web protocol, such as HTTP or HTTPS, in the host. Including the protocol can cause an error.
+--------------------------------------------------------------------------------
+VeracodeJavaAPI v26.3.19.0 cUnknown
+Action: UploadAndScan
+--------------------------------------------------------------------------------
+[2026.06.23 18:01:55.880] Transaction ID: [ae436dd5-add2-4a6e-9f7f-8b255dabfbf8]
+[2026.06.23 18:01:58.640] 
+[2026.06.23 18:01:58.640] Server returned HTTP response code: 401 for URL: https://analysiscenter.veracode.com/api/5.0/getapplist.do
+[2026.06.23 18:01:58.640] Please make sure that all of the following are true: 
+[2026.06.23 18:01:58.640] 1. The login credentials are valid.
+[2026.06.23 18:01:58.640] 2. The account is an API account with sufficient privilege.
+[2026.06.23 18:01:58.640] 3. The account is not locked.
+[2026.06.23 18:01:58.640] 4. This machine's internet-facing IP address is not restricted.
+[2026.06.23 18:01:58.640] 5. Check if the system time is synchronized with the NTP server.
+[2026.06.23 18:01:58.640] 

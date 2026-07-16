@@ -1,0 +1,9 @@
+veracode-dotnet-microservices-lab/astraconciliation.api:validation
+veracode-dotnet-microservices-lab/atlasfuel.api:validation
+veracode-dotnet-microservices-lab/heliosgateway.api:validation
+veracode-dotnet-microservices-lab/nimbusinvoice.api:validation
+veracode-dotnet-microservices-lab/novadocument.api:validation
+veracode-dotnet-microservices-lab/orionledger.api:validation
+veracode-dotnet-microservices-lab/pulsetelemetry.api:validation
+veracode-dotnet-microservices-lab/vertexpricing.api:validation
+veracode-dotnet-microservices-lab/zenithapproval.api:validation

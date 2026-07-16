@@ -1,0 +1,3 @@
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/2794273289400805715/Dedicated.MockGateway.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/2794273289400805715/Dedicated.MockGateway.Api.deps.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/2794273289400805715/Dedicated.MockGateway.Api.pdb

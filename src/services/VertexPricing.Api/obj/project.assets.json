@@ -1,0 +1,207 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Cache.Local.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Cache.Local.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cache.Local.Api.dll": {}
+        }
+      },
+      "Core.Contracts.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.Contracts.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Contracts.Api.dll": {}
+        }
+      },
+      "Core.Validation.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.Validation.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Validation.Api.dll": {}
+        }
+      },
+      "FeatureFlags.Client.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/FeatureFlags.Client.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FeatureFlags.Client.Api.dll": {}
+        }
+      },
+      "Pricing.Rules.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Pricing.Rules.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pricing.Rules.Api.dll": {}
+        }
+      },
+      "Pricing.Tax.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Pricing.Tax.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pricing.Tax.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cache.Local.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Cache.Local.Api/Cache.Local.Api.csproj",
+      "msbuildProject": "../../shared/Cache.Local.Api/Cache.Local.Api.csproj"
+    },
+    "Core.Contracts.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Core.Contracts.Api/Core.Contracts.Api.csproj",
+      "msbuildProject": "../../shared/Core.Contracts.Api/Core.Contracts.Api.csproj"
+    },
+    "Core.Validation.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Core.Validation.Api/Core.Validation.Api.csproj",
+      "msbuildProject": "../../shared/Core.Validation.Api/Core.Validation.Api.csproj"
+    },
+    "FeatureFlags.Client.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.csproj",
+      "msbuildProject": "../../shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.csproj"
+    },
+    "Pricing.Rules.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj",
+      "msbuildProject": "../../shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj"
+    },
+    "Pricing.Tax.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj",
+      "msbuildProject": "../../shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Cache.Local.Api >= 1.0.0",
+      "Core.Contracts.Api >= 1.0.0",
+      "Core.Validation.Api >= 1.0.0",
+      "FeatureFlags.Client.Api >= 1.0.0",
+      "Pricing.Rules.Api >= 1.0.0",
+      "Pricing.Tax.Api >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/luis.araujo/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/VertexPricing.Api/VertexPricing.Api.csproj",
+      "projectName": "VertexPricing.Api",
+      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/VertexPricing.Api/VertexPricing.Api.csproj",
+      "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+      "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/VertexPricing.Api/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Cache.Local.Api/Cache.Local.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Cache.Local.Api/Cache.Local.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/Core.Contracts.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Contracts.Api/Core.Contracts.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Validation.Api/Core.Validation.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Validation.Api/Core.Validation.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/FeatureFlags.Client.Api/FeatureFlags.Client.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreLockProperties": {
+        "restorePackagesWithLockFile": "true"
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

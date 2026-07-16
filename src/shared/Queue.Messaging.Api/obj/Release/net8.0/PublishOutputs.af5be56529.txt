@@ -1,0 +1,3 @@
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/publish/shared/Queue.Messaging.Api/Queue.Messaging.Api.dll
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/publish/shared/Queue.Messaging.Api/Queue.Messaging.Api.deps.json
+/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/publish/shared/Queue.Messaging.Api/Queue.Messaging.Api.pdb

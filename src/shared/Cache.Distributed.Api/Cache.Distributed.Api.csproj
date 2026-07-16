@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Cache.Distributed.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

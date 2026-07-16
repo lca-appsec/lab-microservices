@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj" />
+    <ProjectReference Include="../../shared/Data.SqlBridge.Api/Data.SqlBridge.Api.csproj" />
+    <ProjectReference Include="../../shared/Domain.Payment.Api/Domain.Payment.Api.csproj" />
+    <ProjectReference Include="../../shared/Integration.Bank.Api/Integration.Bank.Api.csproj" />
+    <ProjectReference Include="../../shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj" />
+    <ProjectReference Include="../../shared/Reporting.Query.Api/Reporting.Query.Api.csproj" />
+  </ItemGroup>
+</Project>

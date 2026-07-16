@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Shared.Module01/Shared.Module01.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module02/Shared.Module02.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module03/Shared.Module03.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module04/Shared.Module04.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module05/Shared.Module05.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module06/Shared.Module06.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module07/Shared.Module07.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module08/Shared.Module08.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module09/Shared.Module09.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module10/Shared.Module10.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module11/Shared.Module11.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module12/Shared.Module12.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module13/Shared.Module13.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module14/Shared.Module14.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module15/Shared.Module15.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module16/Shared.Module16.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module17/Shared.Module17.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module18/Shared.Module18.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module19/Shared.Module19.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module20/Shared.Module20.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module21/Shared.Module21.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module22/Shared.Module22.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module23/Shared.Module23.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module24/Shared.Module24.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module25/Shared.Module25.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module26/Shared.Module26.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module27/Shared.Module27.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module28/Shared.Module28.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module29/Shared.Module29.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module30/Shared.Module30.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module31/Shared.Module31.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module32/Shared.Module32.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module33/Shared.Module33.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module34/Shared.Module34.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module35/Shared.Module35.csproj" />
+    <ProjectReference Include="../../shared/Shared.Module36/Shared.Module36.csproj" />
+  </ItemGroup>
+</Project>

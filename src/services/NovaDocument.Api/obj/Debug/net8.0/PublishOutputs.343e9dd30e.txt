@@ -1,0 +1,17 @@
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/appsettings.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/NovaDocument.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/NovaDocument.Api.deps.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/NovaDocument.Api.runtimeconfig.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/NovaDocument.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Core.Contracts.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Document.Rendering.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Document.Signature.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Domain.Customer.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Integration.Storage.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Reporting.Export.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Core.Contracts.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Document.Rendering.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Document.Signature.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Integration.Storage.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Domain.Customer.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/17691712447007138784/Reporting.Export.Api.pdb

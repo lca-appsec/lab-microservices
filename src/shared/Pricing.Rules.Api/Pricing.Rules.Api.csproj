@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Pricing.Rules.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

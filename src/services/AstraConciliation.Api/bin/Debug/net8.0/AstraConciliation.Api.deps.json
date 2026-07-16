@@ -1,0 +1,123 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AstraConciliation.Api/1.0.0": {
+        "dependencies": {
+          "Data.Abstractions.Api": "1.0.0",
+          "Domain.Invoice.Api": "1.0.0",
+          "Domain.Payment.Api": "1.0.0",
+          "Observability.Tracing.Api": "1.0.0",
+          "Queue.Messaging.Api": "1.0.0",
+          "Reconciliation.Engine.Api": "1.0.0",
+          "Reconciliation.Matching.Api": "1.0.0"
+        },
+        "runtime": {
+          "AstraConciliation.Api.dll": {}
+        }
+      },
+      "Data.Abstractions.Api/1.0.0": {
+        "runtime": {
+          "Data.Abstractions.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Domain.Invoice.Api/1.0.0": {
+        "runtime": {
+          "Domain.Invoice.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Domain.Payment.Api/1.0.0": {
+        "runtime": {
+          "Domain.Payment.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Observability.Tracing.Api/1.0.0": {
+        "runtime": {
+          "Observability.Tracing.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Queue.Messaging.Api/1.0.0": {
+        "runtime": {
+          "Queue.Messaging.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Reconciliation.Engine.Api/1.0.0": {
+        "runtime": {
+          "Reconciliation.Engine.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Reconciliation.Matching.Api/1.0.0": {
+        "runtime": {
+          "Reconciliation.Matching.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AstraConciliation.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Data.Abstractions.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Invoice.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Payment.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Observability.Tracing.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Queue.Messaging.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reconciliation.Engine.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reconciliation.Matching.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

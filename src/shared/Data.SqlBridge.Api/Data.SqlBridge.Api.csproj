@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Data.SqlBridge.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

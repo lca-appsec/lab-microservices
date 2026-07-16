@@ -1,0 +1,226 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Data.Abstractions.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Data.Abstractions.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Data.Abstractions.Api.dll": {}
+        }
+      },
+      "Domain.Invoice.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Domain.Invoice.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Invoice.Api.dll": {}
+        }
+      },
+      "Domain.Payment.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Domain.Payment.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Payment.Api.dll": {}
+        }
+      },
+      "Observability.Tracing.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Observability.Tracing.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Observability.Tracing.Api.dll": {}
+        }
+      },
+      "Queue.Messaging.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Queue.Messaging.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Queue.Messaging.Api.dll": {}
+        }
+      },
+      "Reconciliation.Engine.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Reconciliation.Engine.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reconciliation.Engine.Api.dll": {}
+        }
+      },
+      "Reconciliation.Matching.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Reconciliation.Matching.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reconciliation.Matching.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Data.Abstractions.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj",
+      "msbuildProject": "../../shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj"
+    },
+    "Domain.Invoice.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj",
+      "msbuildProject": "../../shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj"
+    },
+    "Domain.Payment.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Domain.Payment.Api/Domain.Payment.Api.csproj",
+      "msbuildProject": "../../shared/Domain.Payment.Api/Domain.Payment.Api.csproj"
+    },
+    "Observability.Tracing.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj",
+      "msbuildProject": "../../shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj"
+    },
+    "Queue.Messaging.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj",
+      "msbuildProject": "../../shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj"
+    },
+    "Reconciliation.Engine.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj",
+      "msbuildProject": "../../shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj"
+    },
+    "Reconciliation.Matching.Api/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj",
+      "msbuildProject": "../../shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Data.Abstractions.Api >= 1.0.0",
+      "Domain.Invoice.Api >= 1.0.0",
+      "Domain.Payment.Api >= 1.0.0",
+      "Observability.Tracing.Api >= 1.0.0",
+      "Queue.Messaging.Api >= 1.0.0",
+      "Reconciliation.Engine.Api >= 1.0.0",
+      "Reconciliation.Matching.Api >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/luis.araujo/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj",
+      "projectName": "AstraConciliation.Api",
+      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj",
+      "packagesPath": "/Users/luis.araujo/.nuget/packages/",
+      "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj"
+            },
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreLockProperties": {
+        "restorePackagesWithLockFile": "true"
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/sdk/10.0.107/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

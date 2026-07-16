@@ -1,0 +1,278 @@
+parameters:
+  - name: dependsOn
+    type: object
+    default: []
+  - name: condition    
+    type: string
+    default: succeeded()
+  - name: continueOnError
+    type: boolean
+    default: false
+
+stages:
+  - stage: veracode
+    displayName: "Veracode"
+    dependsOn: ${{ parameters.dependsOn }}
+    condition: ${{ parameters.condition }}
+    variables:
+      DOCKER_STACK: $[stageDependencies.prebuild.detect_stack_and_dockerfile.outputs['detect.DOCKER_STACK']]
+
+    jobs:
+    # ==================================================
+    # 🔴 VERACODE
+    # ==================================================
+    - job: dotnet
+      displayName: "Veracode Scan"
+      steps:
+
+      - script: |
+          set -e
+
+          ORG_URL="$(System.CollectionUri)"
+          PROJECT="$(python3 -c "import urllib.parse; print(urllib.parse.quote('$(System.TeamProject)', safe=''))")"
+          PIPELINE_ID="$(System.DefinitionId)"
+          RUN_ID="$(Build.BuildId)"
+          ARTIFACT_NAME="build-completed"
+
+          URL="${ORG_URL}${PROJECT}/_apis/pipelines/${PIPELINE_ID}/runs/${RUN_ID}/artifacts?artifactName=${ARTIFACT_NAME}&api-version=7.1"
+
+          echo "Aguardando artifact '${ARTIFACT_NAME}'..."
+          echo "URL: $URL"
+
+          MAX_ATTEMPTS=600
+          SLEEP_SECONDS=5
+
+          for ((i=1;i<=MAX_ATTEMPTS;i++)); do
+            echo "Tentativa $i/$MAX_ATTEMPTS..."
+
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+              -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
+              "$URL")
+
+            if [ "$STATUS" -eq 200 ]; then
+              echo "✅ Artifact encontrado!"
+              exit 0
+            fi
+
+            if [ "$STATUS" -eq 404 ]; then
+              echo "Ainda não disponível..."
+            else
+              echo "Status inesperado: $STATUS"
+            fi
+
+            echo "Aguardando $SLEEP_SECONDS segundos antes da próxima tentativa..."
+            sleep $SLEEP_SECONDS
+          done
+
+          echo "❌ Timeout esperando artifact"
+          exit 1
+        displayName: "Wait until artifact exists"
+        condition: and(succeeded(), eq(variables['DOCKER_STACK'], 'dotnet'))
+        continueOnError: true
+        env:
+          SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+      - task: DownloadPipelineArtifact@2
+        displayName: "Download artifact build"
+        condition: and(succeeded(), eq(variables['DOCKER_STACK'], 'dotnet'))
+        continueOnError: true
+        inputs:
+          buildType: "current"
+          artifact: "build"
+          path: "$(Build.SourcesDirectory)/src"
+
+      - task: CmdLine@2
+        continueOnError: true
+        inputs:
+          script: |
+            PACKAGE_PATH="$(Build.SourcesDirectory)/$(vg_applicationName).zip"
+
+            echo "Verificando tipo de projeto..."
+
+            if find . -type f -name "*.dll" \
+                ! -iname "*Microsoft*" \
+                ! -iname "*UnitTest*" \
+                ! -iname "*Xunit*" \
+                ! -iname "*Test*" \
+                ! -path "*/obj/*" \
+                ! -path "*/ref/*" \
+                | grep -q . \
+            && find . -type f -name "*.pdb" \
+                ! -path "*/obj/*" \
+                | grep -q .
+            then
+
+                echo "Fluxo .NET identificado"
+                TEMP_DIR=$(mktemp -d)
+                find . -type f -name "*.dll" \
+                  ! -iname "*Microsoft*" \
+                  ! -iname "*UnitTest*" \
+                  ! -iname "*Xunit*" \
+                  ! -iname "*Test*" \
+                  ! -path "*/obj/*" \
+                  ! -path "*/ref/*" \
+                  ! -path "*/refint/*" \
+                  ! -path "*/node_modules/*" \
+                  ! -path "*/.git/*" \
+                  ! -path "*/TestResults/*" \
+                  | while read -r dllFile; do
+
+                      pdbFile="${dllFile%.dll}.pdb"
+
+                      if [ -f "$pdbFile" ]; then
+
+                        baseDir="$(dirname "$dllFile")"
+
+                        cp --parents "$dllFile" "$TEMP_DIR"
+                        cp --parents "$pdbFile" "$TEMP_DIR"
+
+                        for ext in deps.json runtimeconfig.json; do
+                          auxFile="${dllFile%.dll}.${ext}"
+
+                          if [ -f "$auxFile" ]; then
+                            cp --parents "$auxFile" "$TEMP_DIR"
+                          fi
+                        done
+
+                        find "$baseDir" -maxdepth 1 -type f \( \
+                            -name "*.json" -o \
+                            -name "*.xml" \
+                          \) \
+                          ! -iname "*test*" \
+                          -exec cp --parents {} "$TEMP_DIR" \;
+
+                        webConfig="$baseDir/web.config"
+
+                        if [ -f "$webConfig" ]; then
+                          cp --parents "$webConfig" "$TEMP_DIR"
+                        fi
+                      fi
+                    done
+
+                cd "$TEMP_DIR"
+
+                zip -r "$PACKAGE_PATH" .
+            else
+                echo "Fluxo interpretadas identificado"
+                zip -r "$PACKAGE_PATH" . \
+                  -i \
+                    '*.py' \
+                    '*.html' \
+                    '*.htm' \
+                    '*.asp' \
+                    '*.cjs' \
+                    '*.css' \
+                    '*.ehtml' \
+                    '*.es' \
+                    '*.es6' \
+                    '*.handlebars' \
+                    '*.hbs' \
+                    '*.hjs' \
+                    '*.js' \
+                    '*.jsx' \
+                    '*.json' \
+                    '*.jsp' \
+                    '*.jspx' \
+                    '*.java' \
+                    '*.map' \
+                    '*.mjs' \
+                    '*.mustache' \
+                    '*.ts' \
+                    '*.tsx' \
+                    '*.vue' \
+                    '*.xhtml' \
+                    '*.lock' \
+                    '*.module' \
+                    '*.inc' \
+                    '*.profile' \
+                    '*.install' \
+                    '*.engine' \
+                    '*.theme' \
+                    '*.php4' \
+                    '*.php5' \
+                    '*.php7' \
+                    '*.phtml' \
+                    '*.txt' \
+                  -x \
+                    '*/node_modules/*' \
+                    '*/.git/*' \
+                    '*/dist/*' \
+                    '*test*' \
+                    '*Test*' \
+                    '*TEST*' \
+                    '*teste*' \
+                    '*Teste*' \
+                    '*TESTE*' \
+                    '*/jest/*' \
+                    '*.sass' \
+                    "**/*.mock.*" \
+                    "**/__mocks__/**" \
+                    "**/mocks/**" \
+                    '*mock*' \
+                    '*Mock*' \
+                    '*MOCK*' \
+                    "**/*.MOCK.*" \
+                    "**/__MOCKS__/**" \
+                    "**/MOCKS/**" 
+            fi
+
+            echo "ZIP criado:"
+            ls -lh "$PACKAGE_PATH"
+        displayName: 'Criando pacote para analise'
+
+      - script: |
+          LATEST_VERSION=$(curl -s https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/maven-metadata.xml | grep -oPm1 "(?<=<latest>)[^<]+")
+          curl -L -o veracode-wrapper.jar "https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/${LATEST_VERSION}/vosp-api-wrappers-java-${LATEST_VERSION}.jar"
+        displayName: 'Download Veracode Wrapper'
+        continueOnError: true
+
+      - script: |
+          if [ $(Build.SourceBranchName) == 'main' ]; then
+              java -jar veracode-wrapper.jar -vid $(VG_VERACODE_API_KEY_ID) -vkey $(VG_VERACODE_API_KEY_SECRET) -action uploadandscan -appname "$(vg_applicationName)" -createprofile true  -version $(build.buildNumber) -filepath $(Build.SourcesDirectory)/$(vg_applicationName).zip -deleteincompletescan 2
+            else
+              java -jar veracode-wrapper.jar -vid $(VG_VERACODE_API_KEY_ID) -vkey $(VG_VERACODE_API_KEY_SECRET) -action uploadandscan -appname "$(vg_applicationName)" -createprofile true  -version $(build.buildNumber) -filepath $(Build.SourcesDirectory)/$(vg_applicationName).zip -createsandbox true -sandboxname "$(Build.SourceBranchName)" -deleteincompletescan 2
+            fi
+        displayName: 'Veracode U&S'
+        continueOnError: true
+
+      - script: |
+          curl -fsS https://tools.veracode.com/veracode-cli/install | sh
+        displayName: 'Download Veracode CLI'
+        continueOnError: true
+
+      - script: |
+          curl -sSL https://download.srcclr.com/ci.sh | bash -s -- scan --update-advisor --allow-dirty --recursive
+        displayName: 'Veracode SCA'
+        continueOnError: true
+        env:
+          SRCCLR_API_TOKEN: $(VG_VERACODE_SRCCLR_API_TOKEN)
+
+      - script: |
+          ORIGINAL_DIR=$(pwd)
+          PARENT_DIR=$(dirname "$ORIGINAL_DIR")
+          ORIGINAL_NAME=$(basename "$ORIGINAL_DIR")
+          PIPELINE_DIR="$(Build.DefinitionName)"
+
+          cd "$PARENT_DIR"
+          mv "$ORIGINAL_NAME" "$PIPELINE_DIR"
+          cd "$PIPELINE_DIR"
+          echo "pasta:$(pwd)"
+
+          ./veracode scan --type directory --source "$(pwd)" --format table
+
+          cd "$PARENT_DIR"
+          mv "$PIPELINE_DIR" "$ORIGINAL_NAME"
+          cd "$ORIGINAL_DIR"
+        displayName: 'Veracode IaC'
+        continueOnError: true
+        env:
+          VERACODE_API_KEY_ID: $(VG_VERACODE_API_KEY_ID)
+          VERACODE_API_KEY_SECRET: $(VG_VERACODE_API_KEY_SECRET)
+
+      - script: |
+            ./veracode static scan "$(Build.SourcesDirectory)/$(vg_applicationName).zip"
+        displayName: 'Veracode SAST'
+        continueOnError: true
+        env:
+          VERACODE_API_KEY_ID: $(VG_VERACODE_API_KEY_ID)
+          VERACODE_API_KEY_SECRET: $(VG_VERACODE_API_KEY_SECRET)

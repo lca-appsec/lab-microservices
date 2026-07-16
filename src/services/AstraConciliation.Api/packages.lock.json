@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "data.abstractions.api": {
+        "type": "Project"
+      },
+      "domain.invoice.api": {
+        "type": "Project"
+      },
+      "domain.payment.api": {
+        "type": "Project"
+      },
+      "observability.tracing.api": {
+        "type": "Project"
+      },
+      "queue.messaging.api": {
+        "type": "Project"
+      },
+      "reconciliation.engine.api": {
+        "type": "Project"
+      },
+      "reconciliation.matching.api": {
+        "type": "Project"
+      }
+    }
+  }
+}

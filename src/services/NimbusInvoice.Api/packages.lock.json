@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "core.contracts.api": {
+        "type": "Project"
+      },
+      "core.validation.api": {
+        "type": "Project"
+      },
+      "document.rendering.api": {
+        "type": "Project"
+      },
+      "domain.invoice.api": {
+        "type": "Project"
+      },
+      "integration.sap.api": {
+        "type": "Project"
+      },
+      "pricing.tax.api": {
+        "type": "Project"
+      },
+      "queue.retry.api": {
+        "type": "Project"
+      },
+      "reporting.export.api": {
+        "type": "Project"
+      }
+    }
+  }
+}

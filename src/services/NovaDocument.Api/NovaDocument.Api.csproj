@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Core.Contracts.Api/Core.Contracts.Api.csproj" />
+    <ProjectReference Include="../../shared/Document.Rendering.Api/Document.Rendering.Api.csproj" />
+    <ProjectReference Include="../../shared/Document.Signature.Api/Document.Signature.Api.csproj" />
+    <ProjectReference Include="../../shared/Integration.Storage.Api/Integration.Storage.Api.csproj" />
+    <ProjectReference Include="../../shared/Domain.Customer.Api/Domain.Customer.Api.csproj" />
+    <ProjectReference Include="../../shared/Reporting.Export.Api/Reporting.Export.Api.csproj" />
+  </ItemGroup>
+</Project>

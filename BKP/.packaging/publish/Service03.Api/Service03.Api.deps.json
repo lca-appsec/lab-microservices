@@ -1,0 +1,529 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Service03.Api/1.0.0": {
+        "dependencies": {
+          "Shared.Module01": "1.0.0",
+          "Shared.Module02": "1.0.0",
+          "Shared.Module03": "1.0.0",
+          "Shared.Module04": "1.0.0",
+          "Shared.Module05": "1.0.0",
+          "Shared.Module06": "1.0.0",
+          "Shared.Module07": "1.0.0",
+          "Shared.Module08": "1.0.0",
+          "Shared.Module09": "1.0.0",
+          "Shared.Module10": "1.0.0",
+          "Shared.Module11": "1.0.0",
+          "Shared.Module12": "1.0.0",
+          "Shared.Module13": "1.0.0",
+          "Shared.Module14": "1.0.0",
+          "Shared.Module15": "1.0.0",
+          "Shared.Module16": "1.0.0",
+          "Shared.Module17": "1.0.0",
+          "Shared.Module18": "1.0.0",
+          "Shared.Module19": "1.0.0",
+          "Shared.Module20": "1.0.0",
+          "Shared.Module21": "1.0.0",
+          "Shared.Module22": "1.0.0",
+          "Shared.Module23": "1.0.0",
+          "Shared.Module24": "1.0.0",
+          "Shared.Module25": "1.0.0",
+          "Shared.Module26": "1.0.0",
+          "Shared.Module27": "1.0.0",
+          "Shared.Module28": "1.0.0",
+          "Shared.Module29": "1.0.0",
+          "Shared.Module30": "1.0.0",
+          "Shared.Module31": "1.0.0",
+          "Shared.Module32": "1.0.0",
+          "Shared.Module33": "1.0.0",
+          "Shared.Module34": "1.0.0",
+          "Shared.Module35": "1.0.0",
+          "Shared.Module36": "1.0.0"
+        },
+        "runtime": {
+          "Service03.Api.dll": {}
+        }
+      },
+      "Shared.Module01/1.0.0": {
+        "runtime": {
+          "Shared.Module01.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module02/1.0.0": {
+        "runtime": {
+          "Shared.Module02.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module03/1.0.0": {
+        "runtime": {
+          "Shared.Module03.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module04/1.0.0": {
+        "runtime": {
+          "Shared.Module04.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module05/1.0.0": {
+        "runtime": {
+          "Shared.Module05.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module06/1.0.0": {
+        "runtime": {
+          "Shared.Module06.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module07/1.0.0": {
+        "runtime": {
+          "Shared.Module07.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module08/1.0.0": {
+        "runtime": {
+          "Shared.Module08.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module09/1.0.0": {
+        "runtime": {
+          "Shared.Module09.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module10/1.0.0": {
+        "runtime": {
+          "Shared.Module10.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module11/1.0.0": {
+        "runtime": {
+          "Shared.Module11.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module12/1.0.0": {
+        "runtime": {
+          "Shared.Module12.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module13/1.0.0": {
+        "runtime": {
+          "Shared.Module13.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module14/1.0.0": {
+        "runtime": {
+          "Shared.Module14.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module15/1.0.0": {
+        "runtime": {
+          "Shared.Module15.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module16/1.0.0": {
+        "runtime": {
+          "Shared.Module16.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module17/1.0.0": {
+        "runtime": {
+          "Shared.Module17.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module18/1.0.0": {
+        "runtime": {
+          "Shared.Module18.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module19/1.0.0": {
+        "runtime": {
+          "Shared.Module19.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module20/1.0.0": {
+        "runtime": {
+          "Shared.Module20.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module21/1.0.0": {
+        "runtime": {
+          "Shared.Module21.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module22/1.0.0": {
+        "runtime": {
+          "Shared.Module22.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module23/1.0.0": {
+        "runtime": {
+          "Shared.Module23.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module24/1.0.0": {
+        "runtime": {
+          "Shared.Module24.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module25/1.0.0": {
+        "runtime": {
+          "Shared.Module25.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module26/1.0.0": {
+        "runtime": {
+          "Shared.Module26.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module27/1.0.0": {
+        "runtime": {
+          "Shared.Module27.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module28/1.0.0": {
+        "runtime": {
+          "Shared.Module28.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module29/1.0.0": {
+        "runtime": {
+          "Shared.Module29.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module30/1.0.0": {
+        "runtime": {
+          "Shared.Module30.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module31/1.0.0": {
+        "runtime": {
+          "Shared.Module31.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module32/1.0.0": {
+        "runtime": {
+          "Shared.Module32.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module33/1.0.0": {
+        "runtime": {
+          "Shared.Module33.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module34/1.0.0": {
+        "runtime": {
+          "Shared.Module34.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module35/1.0.0": {
+        "runtime": {
+          "Shared.Module35.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared.Module36/1.0.0": {
+        "runtime": {
+          "Shared.Module36.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Service03.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module01/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module03/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module04/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module05/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module06/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module07/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module08/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module09/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module10/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module11/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module12/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module13/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module14/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module15/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module16/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module17/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module18/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module19/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module20/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module21/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module22/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module23/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module24/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module25/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module26/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module27/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module28/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module29/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module30/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module31/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module32/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module33/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module34/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module35/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared.Module36/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,3 @@
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/12231080592791789871/Dedicated.Billing.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/12231080592791789871/Dedicated.Billing.Api.deps.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/12231080592791789871/Dedicated.Billing.Api.pdb

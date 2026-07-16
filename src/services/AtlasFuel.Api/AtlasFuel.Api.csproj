@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);NU1901;NU1902;NU1903;NU1904</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.9" />
+    <PackageReference Include="DotNetZip" Version="1.16.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="RestSharp" Version="106.11.4" />
+    <PackageReference Include="SharpZipLib" Version="1.2.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="4.7.1" />
+    <PackageReference Include="AWSSDK.S3" Version="3.3.31.11" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="YamlDotNet" Version="5.3.0" />
+    <ProjectReference Include="../../shared/Core.Contracts.Api/Core.Contracts.Api.csproj" />
+    <ProjectReference Include="../../shared/Core.Security.Api/Core.Security.Api.csproj" />
+    <ProjectReference Include="../../shared/Domain.Fuel.Api/Domain.Fuel.Api.csproj" />
+    <ProjectReference Include="../../shared/Domain.Fleet.Api/Domain.Fleet.Api.csproj" />
+    <ProjectReference Include="../../shared/Pricing.Rules.Api/Pricing.Rules.Api.csproj" />
+    <ProjectReference Include="../../shared/Observability.Audit.Api/Observability.Audit.Api.csproj" />
+    <ProjectReference Include="../../shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj" />
+  </ItemGroup>
+</Project>

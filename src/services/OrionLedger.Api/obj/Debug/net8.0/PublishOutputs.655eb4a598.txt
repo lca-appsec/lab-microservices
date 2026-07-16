@@ -1,0 +1,17 @@
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/appsettings.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/OrionLedger.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/OrionLedger.Api.deps.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/OrionLedger.Api.runtimeconfig.json
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/OrionLedger.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Data.Abstractions.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Data.SqlBridge.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Domain.Payment.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Integration.Bank.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Reconciliation.Engine.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Reporting.Query.Api.dll
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Data.Abstractions.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Data.SqlBridge.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Domain.Payment.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Integration.Bank.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Reconciliation.Engine.Api.pdb
+/var/folders/46/32jmg48x7t94cd8l9fj2sbdm0000gn/T/9044653336574440459/Reporting.Query.Api.pdb

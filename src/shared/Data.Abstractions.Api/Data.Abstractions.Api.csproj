@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Data.Abstractions.Api</AssemblyName>
+  </PropertyGroup>
+</Project>

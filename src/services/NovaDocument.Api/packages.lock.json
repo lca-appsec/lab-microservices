@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "core.contracts.api": {
+        "type": "Project"
+      },
+      "document.rendering.api": {
+        "type": "Project"
+      },
+      "document.signature.api": {
+        "type": "Project"
+      },
+      "domain.customer.api": {
+        "type": "Project"
+      },
+      "integration.storage.api": {
+        "type": "Project"
+      },
+      "reporting.export.api": {
+        "type": "Project"
+      }
+    }
+  }
+}
