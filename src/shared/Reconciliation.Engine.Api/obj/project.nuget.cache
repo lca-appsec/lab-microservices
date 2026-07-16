@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eoICiEQ2cKc=",
+  "dgSpecHash": "35GWV6S2qXc=",
   "success": true,
-  "projectFilePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj",
+  "projectFilePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj",
   "expectedPackageFiles": [
     "/Users/luis.araujo/.nuget/packages/microsoft.netcore.app.ref/8.0.26/microsoft.netcore.app.ref.8.0.26.nupkg.sha512",
     "/Users/luis.araujo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.26/microsoft.aspnetcore.app.ref.8.0.26.nupkg.sha512"

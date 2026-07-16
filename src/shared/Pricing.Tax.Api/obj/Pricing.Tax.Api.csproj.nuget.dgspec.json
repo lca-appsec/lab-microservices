@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj": {}
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj": {}
   },
   "projects": {
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj",
         "projectName": "Pricing.Tax.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Tax.Api/Pricing.Tax.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Pricing.Tax.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Pricing.Tax.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"

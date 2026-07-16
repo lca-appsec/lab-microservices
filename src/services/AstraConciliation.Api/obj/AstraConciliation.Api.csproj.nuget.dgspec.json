@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj": {}
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj": {}
   },
   "projects": {
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj",
         "projectName": "AstraConciliation.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/AstraConciliation.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/AstraConciliation.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/AstraConciliation.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -27,26 +27,26 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj": {
-                "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj"
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj"
               },
-              "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj": {
-                "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj"
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj"
               },
-              "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj": {
-                "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj"
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj"
               },
-              "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj": {
-                "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj"
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj"
               },
-              "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj": {
-                "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj"
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj"
               },
-              "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj": {
-                "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj"
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj"
               },
-              "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj": {
-                "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj"
+              "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj": {
+                "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj"
               }
             }
           }
@@ -86,10 +86,6 @@
               "version": "[8.0.26, 8.0.26]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[8.0.26, 8.0.26]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[8.0.26, 8.0.26]"
             }
@@ -106,14 +102,14 @@
         }
       }
     },
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj",
         "projectName": "Data.Abstractions.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/Data.Abstractions.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Data.Abstractions.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Data.Abstractions.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -179,14 +175,14 @@
         }
       }
     },
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj",
         "projectName": "Domain.Invoice.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/Domain.Invoice.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Invoice.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Invoice.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -252,14 +248,14 @@
         }
       }
     },
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj",
         "projectName": "Domain.Payment.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/Domain.Payment.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Domain.Payment.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Domain.Payment.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -325,14 +321,14 @@
         }
       }
     },
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj",
         "projectName": "Observability.Tracing.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/Observability.Tracing.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Tracing.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Tracing.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -398,14 +394,14 @@
         }
       }
     },
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj",
         "projectName": "Queue.Messaging.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/Queue.Messaging.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Queue.Messaging.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Queue.Messaging.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -471,14 +467,14 @@
         }
       }
     },
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj",
         "projectName": "Reconciliation.Engine.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/Reconciliation.Engine.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Engine.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Engine.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -544,14 +540,14 @@
         }
       }
     },
-    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj": {
+    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj",
         "projectName": "Reconciliation.Matching.Api",
-        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/Reconciliation.Matching.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Reconciliation.Matching.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Reconciliation.Matching.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"

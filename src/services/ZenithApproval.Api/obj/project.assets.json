@@ -5192,11 +5192,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/ZenithApproval.Api/ZenithApproval.Api.csproj",
+      "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/ZenithApproval.Api/ZenithApproval.Api.csproj",
       "projectName": "ZenithApproval.Api",
-      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/ZenithApproval.Api/ZenithApproval.Api.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/ZenithApproval.Api/ZenithApproval.Api.csproj",
       "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-      "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/services/ZenithApproval.Api/obj/",
+      "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/ZenithApproval.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -5212,23 +5212,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Core.Security.Api/Core.Security.Api.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Core.Security.Api/Core.Security.Api.csproj"
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/Core.Security.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Core.Security.Api/Core.Security.Api.csproj"
             },
-            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Identity.Claims.Api/Identity.Claims.Api.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Identity.Claims.Api/Identity.Claims.Api.csproj"
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Identity.Claims.Api/Identity.Claims.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Identity.Claims.Api/Identity.Claims.Api.csproj"
             },
-            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Identity.Tokens.Api/Identity.Tokens.Api.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Identity.Tokens.Api/Identity.Tokens.Api.csproj"
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Identity.Tokens.Api/Identity.Tokens.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Identity.Tokens.Api/Identity.Tokens.Api.csproj"
             },
-            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Integration.Email.Api/Integration.Email.Api.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Integration.Email.Api/Integration.Email.Api.csproj"
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Integration.Email.Api/Integration.Email.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Integration.Email.Api/Integration.Email.Api.csproj"
             },
-            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Workflow.Approval.Api/Workflow.Approval.Api.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Workflow.Approval.Api/Workflow.Approval.Api.csproj"
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Workflow.Approval.Api/Workflow.Approval.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Workflow.Approval.Api/Workflow.Approval.Api.csproj"
             },
-            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Workflow.Notification.Api/Workflow.Notification.Api.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Workflow.Notification.Api/Workflow.Notification.Api.csproj"
+            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Workflow.Notification.Api/Workflow.Notification.Api.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Workflow.Notification.Api/Workflow.Notification.Api.csproj"
             }
           }
         }
@@ -5265,10 +5265,6 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.26, 8.0.26]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.osx-arm64",
             "version": "[8.0.26, 8.0.26]"
           },
           {
