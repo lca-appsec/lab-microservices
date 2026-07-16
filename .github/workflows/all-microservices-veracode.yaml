@@ -125,7 +125,7 @@ jobs:
           scantimeout: 60
 
   veracode_sca:
-    name: Veracode SCA - Agent-Based Scan
+    name: Veracode SCA - Agent Based Scan
     runs-on: ubuntu-latest
     needs: qa_package
 
