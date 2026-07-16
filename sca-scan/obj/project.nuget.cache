@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rlwx/lgnnns=",
+  "dgSpecHash": "YZRi/4eiDDE=",
   "success": true,
-  "projectFilePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+  "projectFilePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
   "expectedPackageFiles": [
     "/Users/luis.araujo/.nuget/packages/awssdk.core/3.3.31.3/awssdk.core.3.3.31.3.nupkg.sha512",
     "/Users/luis.araujo/.nuget/packages/awssdk.s3/3.3.31.11/awssdk.s3.3.3.31.11.nupkg.sha512",
@@ -140,9 +140,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'BouncyCastle' 1.8.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-6xx3-rg99-gc3p",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         "net8.0"
@@ -152,9 +152,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'BouncyCastle' 1.8.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8xfc-gm6g-vgpv",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         "net8.0"
@@ -164,9 +164,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'BouncyCastle' 1.8.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m44j-cfrm-g8qc",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         "net8.0"
@@ -176,9 +176,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'BouncyCastle' 1.8.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-v435-xc8x-wvr9",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         "net8.0"
@@ -188,9 +188,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'DotNetZip' 1.16.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "DotNetZip",
       "targetGraphs": [
         "net8.0"
@@ -200,9 +200,9 @@
       "code": "NU1904",
       "level": "Warning",
       "message": "Package 'log4net' 2.0.8 has a known critical severity vulnerability, https://github.com/advisories/GHSA-2cwj-8chv-9pp9",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "log4net",
       "targetGraphs": [
         "net8.0"
@@ -212,9 +212,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'log4net' 2.0.8 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4f7c-pmjv-c25w",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "log4net",
       "targetGraphs": [
         "net8.0"
@@ -224,9 +224,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'Microsoft.Data.SqlClient' 2.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "Microsoft.Data.SqlClient",
       "targetGraphs": [
         "net8.0"
@@ -236,9 +236,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Microsoft.Data.SqlClient' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "Microsoft.Data.SqlClient",
       "targetGraphs": [
         "net8.0"
@@ -248,9 +248,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'Microsoft.IdentityModel.JsonWebTokens' 5.6.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "Microsoft.IdentityModel.JsonWebTokens",
       "targetGraphs": [
         "net8.0"
@@ -260,9 +260,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Newtonsoft.Json' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "Newtonsoft.Json",
       "targetGraphs": [
         "net8.0"
@@ -272,9 +272,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'RestSharp' 106.11.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-9pq7-rcxv-47vq",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "RestSharp",
       "targetGraphs": [
         "net8.0"
@@ -284,9 +284,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SharpZipLib' 1.2.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-m22m-h4rf-pwq3",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SharpZipLib",
       "targetGraphs": [
         "net8.0"
@@ -296,9 +296,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SharpZipLib' 1.2.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-mm6g-mmq6-53ff",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SharpZipLib",
       "targetGraphs": [
         "net8.0"
@@ -308,9 +308,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-2cmq-823j-5qj8",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         "net8.0"
@@ -320,9 +320,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5x7m-6737-26cr",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         "net8.0"
@@ -332,9 +332,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-63p8-c4ww-9cg7",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         "net8.0"
@@ -344,9 +344,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-65x7-c272-7g7r",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         "net8.0"
@@ -356,9 +356,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g85r-6x2q-45w7",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         "net8.0"
@@ -368,9 +368,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-qxrv-gp6x-rc23",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         "net8.0"
@@ -380,9 +380,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-rxmq-m78w-7wmc",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         "net8.0"
@@ -392,9 +392,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'System.IdentityModel.Tokens.Jwt' 5.6.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
         "net8.0"
@@ -404,9 +404,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'System.Net.Http' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7jgj-8wvc-jh57",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "System.Net.Http",
       "targetGraphs": [
         "net8.0"
@@ -416,9 +416,9 @@
       "code": "NU1904",
       "level": "Warning",
       "message": "Package 'System.Text.Encodings.Web' 4.7.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-ghhp-997w-qr28",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "System.Text.Encodings.Web",
       "targetGraphs": [
         "net8.0"
@@ -428,9 +428,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'BouncyCastle 1.8.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "filePath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         "net8.0"

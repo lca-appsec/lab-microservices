@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj": {}
+    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj": {}
   },
   "projects": {
-    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj": {
+    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj",
         "projectName": "Observability.Metrics.Api",
-        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Metrics.Api/Observability.Metrics.Api.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Observability.Metrics.Api/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/src/shared/Observability.Metrics.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"

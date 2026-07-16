@@ -592,11 +592,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/Service08.Api/Service08.Api.csproj",
+      "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/services/Service08.Api/Service08.Api.csproj",
       "projectName": "Service08.Api",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/Service08.Api/Service08.Api.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/services/Service08.Api/Service08.Api.csproj",
       "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-      "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/services/Service08.Api/obj/",
+      "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/services/Service08.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
@@ -612,113 +612,113 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module01/Shared.Module01.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module01/Shared.Module01.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module01/Shared.Module01.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module01/Shared.Module01.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module02/Shared.Module02.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module02/Shared.Module02.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module02/Shared.Module02.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module02/Shared.Module02.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module03/Shared.Module03.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module03/Shared.Module03.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module03/Shared.Module03.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module03/Shared.Module03.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module04/Shared.Module04.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module04/Shared.Module04.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module04/Shared.Module04.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module04/Shared.Module04.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module05/Shared.Module05.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module05/Shared.Module05.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module05/Shared.Module05.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module05/Shared.Module05.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module06/Shared.Module06.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module06/Shared.Module06.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module06/Shared.Module06.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module06/Shared.Module06.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module07/Shared.Module07.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module07/Shared.Module07.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module07/Shared.Module07.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module07/Shared.Module07.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/Shared.Module08.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module08/Shared.Module08.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module08/Shared.Module08.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module08/Shared.Module08.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module09/Shared.Module09.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module09/Shared.Module09.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module09/Shared.Module09.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module09/Shared.Module09.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module10/Shared.Module10.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module10/Shared.Module10.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module10/Shared.Module10.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module10/Shared.Module10.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module11/Shared.Module11.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module11/Shared.Module11.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module11/Shared.Module11.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module11/Shared.Module11.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module12/Shared.Module12.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module12/Shared.Module12.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module12/Shared.Module12.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module12/Shared.Module12.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module13/Shared.Module13.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module13/Shared.Module13.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module13/Shared.Module13.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module13/Shared.Module13.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module14/Shared.Module14.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module14/Shared.Module14.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module14/Shared.Module14.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module14/Shared.Module14.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module15/Shared.Module15.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module15/Shared.Module15.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module15/Shared.Module15.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module15/Shared.Module15.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module16/Shared.Module16.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module16/Shared.Module16.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module16/Shared.Module16.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module16/Shared.Module16.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module17/Shared.Module17.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module17/Shared.Module17.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module17/Shared.Module17.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module17/Shared.Module17.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module18/Shared.Module18.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module18/Shared.Module18.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module18/Shared.Module18.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module18/Shared.Module18.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module19/Shared.Module19.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module19/Shared.Module19.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module19/Shared.Module19.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module19/Shared.Module19.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module20/Shared.Module20.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module20/Shared.Module20.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module20/Shared.Module20.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module20/Shared.Module20.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module21/Shared.Module21.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module21/Shared.Module21.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module21/Shared.Module21.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module21/Shared.Module21.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module22/Shared.Module22.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module22/Shared.Module22.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module22/Shared.Module22.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module22/Shared.Module22.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module23/Shared.Module23.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module23/Shared.Module23.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module23/Shared.Module23.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module23/Shared.Module23.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module24/Shared.Module24.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module24/Shared.Module24.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module24/Shared.Module24.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module24/Shared.Module24.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module25/Shared.Module25.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module25/Shared.Module25.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module25/Shared.Module25.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module25/Shared.Module25.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module26/Shared.Module26.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module26/Shared.Module26.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module26/Shared.Module26.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module26/Shared.Module26.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module27/Shared.Module27.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module27/Shared.Module27.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module27/Shared.Module27.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module27/Shared.Module27.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module28/Shared.Module28.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module28/Shared.Module28.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module28/Shared.Module28.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module28/Shared.Module28.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module29/Shared.Module29.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module29/Shared.Module29.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module29/Shared.Module29.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module29/Shared.Module29.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module30/Shared.Module30.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module30/Shared.Module30.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module30/Shared.Module30.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module30/Shared.Module30.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module31/Shared.Module31.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module31/Shared.Module31.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module31/Shared.Module31.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module31/Shared.Module31.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module32/Shared.Module32.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module32/Shared.Module32.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module32/Shared.Module32.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module32/Shared.Module32.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module33/Shared.Module33.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module33/Shared.Module33.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module33/Shared.Module33.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module33/Shared.Module33.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module34/Shared.Module34.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module34/Shared.Module34.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module34/Shared.Module34.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module34/Shared.Module34.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module35/Shared.Module35.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module35/Shared.Module35.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module35/Shared.Module35.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module35/Shared.Module35.csproj"
             },
-            "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj": {
-              "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj"
+            "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module36/Shared.Module36.csproj": {
+              "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module36/Shared.Module36.csproj"
             }
           }
         }
@@ -752,6 +752,10 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
             "version": "[8.0.26, 8.0.26]"
           },
           {

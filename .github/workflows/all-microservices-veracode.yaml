@@ -1,0 +1,232 @@
+name: All Microservices - QA and Veracode Scans
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/services/**"
+      - "src/shared/**"
+      - "infra/**"
+      - "Directory.Build.props"
+      - "global.json"
+      - ".dockerignore"
+      - "scripts/**"
+      - ".github/workflows/all-microservices-veracode.yaml"
+  push:
+    branches: [main]
+    paths:
+      - "src/services/**"
+      - "src/shared/**"
+      - "infra/**"
+      - "Directory.Build.props"
+      - "global.json"
+      - ".dockerignore"
+      - "scripts/**"
+      - ".github/workflows/all-microservices-veracode.yaml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: veracode-all-microservices-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  APP_PROJECTS: ${{ vars.APP_PROJECTS }}
+  SERVICE_ROOT: ${{ vars.SERVICE_ROOT || 'src/services' }}
+  SHARED_ROOT: ${{ vars.SHARED_ROOT || 'src/shared' }}
+  TARGET_FRAMEWORK: ${{ vars.TARGET_FRAMEWORK || 'net8.0' }}
+  VERACODE_APP_NAME: ${{ vars.VERACODE_APP_NAME || github.repository }}
+  VERACODE_PACKAGE: veracode-upload.zip
+
+jobs:
+  qa_package:
+    name: QA - Build and Veracode Package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Install packaging tools
+        run: sudo apt-get update && sudo apt-get install -y zip unzip
+
+      - name: Build projects
+        run: ./scripts/build.sh
+
+      - name: Create deduplicated Veracode package
+        run: ./scripts/package-all-services-for-veracode.sh
+
+      - name: Show package contents
+        run: |
+          ls -lh "$VERACODE_PACKAGE"
+          echo "Service projects included:"
+          cat veracode-evidence/service-projects.txt
+          echo "Shared projects included:"
+          cat veracode-evidence/shared-projects.txt
+          echo "DLL entries:"
+          unzip -Z1 "$VERACODE_PACKAGE" | grep -E '\.dll$' | wc -l
+          echo "Unique DLL names:"
+          unzip -Z1 "$VERACODE_PACKAGE" | grep -E '\.dll$' | sed 's#.*/##' | sort -u | wc -l
+          echo "Duplicate file names:"
+          if [ -s veracode-evidence/duplicate-file-names.txt ]; then
+            cat veracode-evidence/duplicate-file-names.txt
+            exit 1
+          fi
+          echo "none"
+          echo "Excluded path violations:"
+          if [ -s veracode-evidence/excluded-path-violations.txt ]; then
+            cat veracode-evidence/excluded-path-violations.txt
+            exit 1
+          fi
+          echo "none"
+
+      - name: Upload Veracode package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: veracode-upload-package
+          path: |
+            ${{ env.VERACODE_PACKAGE }}
+            veracode-evidence/
+
+  veracode_sast:
+    name: Veracode SAST - Upload and Scan
+    runs-on: ubuntu-latest
+    needs: qa_package
+
+    steps:
+      - name: Download Veracode package artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: veracode-upload-package
+          path: .
+
+      - name: Veracode Upload and Scan
+        uses: veracode/veracode-uploadandscan-action@0.2.10
+        with:
+          appname: ${{ env.VERACODE_APP_NAME }}
+          createprofile: true
+          filepath: ${{ env.VERACODE_PACKAGE }}
+          version: GitHub-${{ github.run_number }}-${{ github.sha }}
+          vid: ${{ secrets.VERACODE_API_ID }}
+          vkey: ${{ secrets.VERACODE_API_KEY }}
+          criticality: VeryHigh
+          scanallnonfataltoplevelmodules: true
+          includenewmodules: true
+          deleteincompletescan: 1
+          maxretrycount: 3
+          scanpollinginterval: 120
+          scantimeout: 60
+
+  veracode_sca:
+    name: Veracode SCA - Agent-Based Scan
+    runs-on: ubuntu-latest
+    needs: qa_package
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Create single SCA aggregate project
+        run: ./scripts/create-sca-aggregate-project.sh
+
+      - name: Remove build artifacts before SCA
+        run: |
+          find . -type d \( -name bin -o -name publish-veracode -o -name veracode-scan \) -prune -exec rm -rf {} +
+          rm -f veracode-upload.zip docker-images.txt
+
+      - name: Veracode SCA
+        env:
+          SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
+        run: |
+          set -o pipefail
+          unset SRCCLR_WORKSPACE
+          unset SRCCLR_WORKSPACE_ID
+          unset SRCCLR_WORKSPACE_NAME
+          unset SRCCLR_WORKSPACE_SLUG
+          echo "SCA environment variables enabled:"
+          env | cut -d= -f1 | grep '^SRCCLR_' | sort
+          curl -sSL https://download.sourceclear.com/ci.sh \
+            | sh -s -- scan sca-scan --allow-dirty --skip-vms \
+            2>&1 | tee sca-results.txt
+
+      - name: Upload SCA results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: veracode-sca-results
+          path: |
+            sca-results.txt
+            sca-evidence/
+
+  veracode_iac:
+    name: Veracode IaC - CLI Scan
+    runs-on: ubuntu-latest
+    needs: qa_package
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Veracode CLI IaC scan
+        env:
+          VERACODE_API_KEY_ID: ${{ secrets.VERACODE_API_ID }}
+          VERACODE_API_KEY_SECRET: ${{ secrets.VERACODE_API_KEY }}
+          IAC_DIR: .
+        run: ./scripts/veracode-cli-scans.sh
+
+      - name: Upload Veracode IaC results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: veracode-iac-results
+          path: veracode-results/
+
+  docker_build:
+    name: Docker - Build Images
+    runs-on: ubuntu-latest
+    needs:
+      - veracode_sast
+      - veracode_sca
+      - veracode_iac
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate service Dockerfiles
+        run: |
+          {
+            for csproj in $APP_PROJECTS; do printf '%s\n' "$csproj"; done
+            if [ -d "$SERVICE_ROOT" ]; then
+              find "$SERVICE_ROOT" \
+                -path "*/bin" -prune -o \
+                -path "*/obj" -prune -o \
+                -name "*.csproj" -type f -print
+            fi
+          } | sort -u | while read -r csproj; do
+              test -f "$(dirname "$csproj")/Dockerfile"
+            done
+
+      - name: Build Docker image for each microservice
+        env:
+          IMAGE_PREFIX: ${{ github.repository }}
+          IMAGE_TAG: github-${{ github.run_number }}-${{ github.sha }}
+        run: ./scripts/build-service-images.sh
+
+      - name: Upload Docker image list
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-images
+          path: docker-images.txt

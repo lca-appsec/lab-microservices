@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj": {}
+    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module36/Shared.Module36.csproj": {}
   },
   "projects": {
-    "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj": {
+    "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module36/Shared.Module36.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj",
+        "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module36/Shared.Module36.csproj",
         "projectName": "Shared.Module36",
-        "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/Shared.Module36.csproj",
+        "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module36/Shared.Module36.csproj",
         "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-        "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/src/shared/Shared.Module36/obj/",
+        "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/BKP/src/shared/Shared.Module36/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"

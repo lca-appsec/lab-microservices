@@ -7614,11 +7614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectUniqueName": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "projectName": "VeracodeSca.Aggregate",
-      "projectPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/VeracodeSca.Aggregate.csproj",
+      "projectPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/VeracodeSca.Aggregate.csproj",
       "packagesPath": "/Users/luis.araujo/.nuget/packages/",
-      "outputPath": "/Users/luis.araujo/Documents/Codex/2026-06-23/teste-esse-endpoint-e-me-dica/outputs/veracode-dotnet-microservices-lab/sca-scan/obj/",
+      "outputPath": "/Users/luis.araujo/Documents/labs/veracode-lab-dotnet/sca-scan/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/luis.araujo/.nuget/NuGet/NuGet.Config"
