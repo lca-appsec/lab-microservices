@@ -2,15 +2,14 @@ trigger:
   branches:
     include:
       - main
+      - dev
   paths:
     include:
-      - src/services/**
-      - src/shared/**
+      - src/**
       - infra/**
       - Directory.Build.props
       - global.json
       - .dockerignore
-      - scripts/**
       - azure-pipelines.yml
 
 pr:
@@ -19,114 +18,283 @@ pr:
       - main
   paths:
     include:
-      - src/services/**
-      - src/shared/**
+      - src/**
       - infra/**
       - Directory.Build.props
       - global.json
       - .dockerignore
-      - scripts/**
       - azure-pipelines.yml
 
+pool:
+  vmImage: ubuntu-latest
+
 variables:
-  APP_PROJECTS: ''
-  SERVICE_ROOT: src/services
-  SHARED_ROOT: src/shared
-  TARGET_FRAMEWORK: net8.0
-  VERACODE_APP_NAME: $(Build.Repository.Name)
-  VERACODE_PACKAGE: veracode-upload.zip
-  SCA_FAIL_ON_WORKSPACE_LIMIT: 'false'
+  sourceRoot: src
+  serviceRoot: src/services
+  sharedRoot: src/shared
+  buildConfiguration: Release
+  targetFramework: net8.0
+  veracodePackage: veracode-upload.zip
+  scanDirectory: veracode-scan
+  veracodeAppName: $(Build.Repository.Name)
+  scaFailOnWorkspaceLimit: 'false'
 
 stages:
-  - stage: QA_Package
-    displayName: QA - Build and Veracode Package
+  - stage: QA
+    displayName: "Step: QA"
     jobs:
-      - job: qa_package
-        displayName: Build, test and package
-        pool:
-          vmImage: ubuntu-latest
+      - job: qa
+        displayName: "Step: QA - Restore, Build and Test"
         steps:
           - checkout: self
+            clean: true
 
           - task: UseDotNet@2
-            displayName: Setup .NET 8
+            displayName: "Step: QA - Setup .NET 8"
             inputs:
               packageType: sdk
               version: 8.0.x
 
-          - script: |
-              sudo apt-get update
-              sudo apt-get install -y zip unzip
-            displayName: Install packaging tools
+          - bash: |
+              set -euo pipefail
 
-          - script: chmod +x scripts/*.sh
-            displayName: Make scripts executable
+              solution="$(find "$(sourceRoot)" -type f -name "*.sln" ! -path "*/bin/*" ! -path "*/obj/*" | sort | head -n 1)"
 
-          - script: ./scripts/build.sh
-            displayName: Build projects
-            env:
-              APP_PROJECTS: $(APP_PROJECTS)
-              SERVICE_ROOT: $(SERVICE_ROOT)
-              SHARED_ROOT: $(SHARED_ROOT)
-              TARGET_FRAMEWORK: $(TARGET_FRAMEWORK)
-
-          - script: ./scripts/package-all-services-for-veracode.sh
-            displayName: Create deduplicated Veracode package
-            env:
-              APP_PROJECTS: $(APP_PROJECTS)
-              SERVICE_ROOT: $(SERVICE_ROOT)
-              SHARED_ROOT: $(SHARED_ROOT)
-              TARGET_FRAMEWORK: $(TARGET_FRAMEWORK)
-              VERACODE_PACKAGE: $(VERACODE_PACKAGE)
-              ZIP_FILE: $(VERACODE_PACKAGE)
-
-          - script: |
-              ls -lh "$(VERACODE_PACKAGE)"
-              echo "Service projects included:"
-              cat veracode-evidence/service-projects.txt
-              echo "Shared projects included:"
-              cat veracode-evidence/shared-projects.txt
-              echo "DLL entries:"
-              unzip -Z1 "$(VERACODE_PACKAGE)" | grep -E '\.dll$' | wc -l
-              echo "Unique DLL names:"
-              unzip -Z1 "$(VERACODE_PACKAGE)" | grep -E '\.dll$' | sed 's#.*/##' | sort -u | wc -l
-              echo "Duplicate file names:"
-              if [ -s veracode-evidence/duplicate-file-names.txt ]; then
-                cat veracode-evidence/duplicate-file-names.txt
-                exit 1
+              if [ -n "$solution" ]; then
+                echo "Restoring solution: $solution"
+                dotnet restore "$solution"
+                echo "Building solution: $solution"
+                dotnet build "$solution" -c "$(buildConfiguration)" -f "$(targetFramework)" --no-restore
+              else
+                echo "No solution found. Building projects under $(sourceRoot)."
+                find "$(sourceRoot)" -type f -name "*.csproj" \
+                  ! -path "*/bin/*" \
+                  ! -path "*/obj/*" \
+                  ! -path "*/tests/*" \
+                  ! -path "*/Tests/*" \
+                  | sort \
+                  | while IFS= read -r project; do
+                      dotnet restore "$project"
+                      dotnet build "$project" -c "$(buildConfiguration)" -f "$(targetFramework)" --no-restore
+                    done
               fi
-              echo "none"
-              echo "Excluded path violations:"
-              if [ -s veracode-evidence/excluded-path-violations.txt ]; then
-                cat veracode-evidence/excluded-path-violations.txt
-                exit 1
+            displayName: "Step: QA - Restore and Build"
+
+          - bash: |
+              set -euo pipefail
+
+              mapfile -t tests < <(
+                find "$(sourceRoot)" -type f -name "*.csproj" \
+                  ! -path "*/bin/*" \
+                  ! -path "*/obj/*" \
+                  | grep -Ei '(/tests?/|\.tests?\.csproj$)' || true
+              )
+
+              if [ "${#tests[@]}" -eq 0 ]; then
+                echo "No test projects found."
+                exit 0
               fi
-              echo "none"
-            displayName: Show package evidence
 
-          - script: |
-              mkdir -p "$(Build.ArtifactStagingDirectory)/veracode-upload-package"
-              cp "$(VERACODE_PACKAGE)" "$(Build.ArtifactStagingDirectory)/veracode-upload-package/"
-              cp -R veracode-evidence "$(Build.ArtifactStagingDirectory)/veracode-upload-package/"
-            displayName: Stage Veracode package artifact
+              for test_project in "${tests[@]}"; do
+                echo "Testing: $test_project"
+                dotnet test "$test_project" \
+                  -c "$(buildConfiguration)" \
+                  -f "$(targetFramework)" \
+                  --no-build \
+                  --logger trx \
+                  --results-directory "$(Agent.TempDirectory)/test-results"
+              done
+            displayName: "Step: QA - Tests"
 
-          - publish: $(Build.ArtifactStagingDirectory)/veracode-upload-package
-            artifact: veracode-upload-package
-            displayName: Publish Veracode package artifact
+          - task: PublishTestResults@2
+            displayName: "Step: QA - Publish Test Results"
+            condition: always()
+            inputs:
+              testResultsFormat: VSTest
+              testResultsFiles: "$(Agent.TempDirectory)/test-results/*.trx"
+              failTaskOnFailedTests: true
 
-  - stage: Veracode_SAST
-    displayName: Veracode SAST - Upload and Scan
-    dependsOn: QA_Package
+  - stage: Package
+    displayName: "Step: Package"
+    dependsOn: QA
     jobs:
-      - job: veracode_sast
-        displayName: Upload and scan
-        pool:
-          vmImage: ubuntu-latest
+      - job: package
+        displayName: "Step: Package - Deduplicate .NET Assemblies"
         steps:
-          - download: current
+          - checkout: self
+            clean: true
+
+          - task: UseDotNet@2
+            displayName: "Step: Package - Setup .NET 8"
+            inputs:
+              packageType: sdk
+              version: 8.0.x
+
+          - bash: |
+              set -euo pipefail
+
+              scan_dir="$(Build.ArtifactStagingDirectory)/$(scanDirectory)"
+              publish_dir="$(Agent.TempDirectory)/publish-veracode"
+              evidence_dir="$(Build.ArtifactStagingDirectory)/veracode-evidence"
+              package_path="$(Build.ArtifactStagingDirectory)/$(veracodePackage)"
+              copied_files="$(mktemp)"
+
+              rm -rf "$scan_dir" "$publish_dir" "$evidence_dir" "$package_path"
+              mkdir -p "$scan_dir/services" "$scan_dir/shared" "$publish_dir" "$evidence_dir"
+              touch "$copied_files"
+
+              find_projects() {
+                local root="$1"
+                [ -d "$root" ] || return 0
+
+                find "$root" \
+                  \( -name bin -o -name obj -o -name Debug -o -name debug -o -name Release -o -name release \
+                     -o -name publish -o -name publish-veracode -o -name veracode-scan -o -name veracode-results \
+                     -o -name TestResults -o -name .vs -o -name .git -o -name node_modules \) -type d -prune -o \
+                  -name "*.csproj" -type f -print
+              }
+
+              assembly_name() {
+                local csproj="$1"
+                local name
+                name="$(sed -nE 's:.*<AssemblyName>([^<]+)</AssemblyName>.*:\1:p' "$csproj" | head -1)"
+                printf '%s\n' "${name:-$(basename "$csproj" .csproj)}"
+              }
+
+              copy_once() {
+                local source="$1"
+                local target_dir="$2"
+                local name
+
+                name="$(basename "$source")"
+
+                if [ -f "$source" ] && ! grep -Fxq "$name" "$copied_files"; then
+                  mkdir -p "$target_dir"
+                  cp "$source" "$target_dir/$name"
+                  printf '%s\n' "$name" >> "$copied_files"
+                fi
+              }
+
+              find_projects "$(sourceRoot)" | sort -u > "$evidence_dir/all-projects.txt"
+              find_projects "$(sharedRoot)" | sort -u > "$evidence_dir/shared-projects.txt"
+
+              find_projects "$(serviceRoot)" \
+                | sort -u \
+                | while IFS= read -r project; do
+                    project_name="$(basename "$project" .csproj)"
+
+                    if grep -q 'Sdk="Microsoft.NET.Sdk.Web"' "$project" \
+                      || grep -q '<OutputType>Exe</OutputType>' "$project" \
+                      || echo "$project_name" | grep -Eq '(\.Api|\.Job|\.Worker|\.Service)$'; then
+                      echo "$project"
+                    fi
+                  done \
+                | sort -u > "$evidence_dir/service-projects.txt"
+
+              if [ ! -s "$evidence_dir/service-projects.txt" ]; then
+                echo "No service projects were found under $(serviceRoot)."
+                exit 1
+              fi
+
+              while IFS= read -r project; do
+                assembly_name "$project"
+              done < "$evidence_dir/all-projects.txt" | sort -u > "$evidence_dir/internal-assemblies.txt"
+
+              echo "Service projects:"
+              cat "$evidence_dir/service-projects.txt"
+              echo "Shared projects:"
+              cat "$evidence_dir/shared-projects.txt"
+
+              while IFS= read -r project; do
+                service_name="$(assembly_name "$project")"
+                out="$publish_dir/$service_name"
+
+                dotnet publish "$project" \
+                  -c "$(buildConfiguration)" \
+                  -f "$(targetFramework)" \
+                  -o "$out" \
+                  -p:UseAppHost=false
+
+                copy_once "$out/$service_name.dll" "$scan_dir/services/$service_name"
+                copy_once "$out/$service_name.pdb" "$scan_dir/services/$service_name"
+
+                while IFS= read -r assembly; do
+                  [ "$assembly" = "$service_name" ] && continue
+                  copy_once "$out/$assembly.dll" "$scan_dir/shared"
+                  copy_once "$out/$assembly.pdb" "$scan_dir/shared"
+                done < "$evidence_dir/internal-assemblies.txt"
+              done < "$evidence_dir/service-projects.txt"
+
+              while IFS= read -r project; do
+                shared_name="$(assembly_name "$project")"
+                out="$publish_dir/shared/$shared_name"
+
+                dotnet publish "$project" \
+                  -c "$(buildConfiguration)" \
+                  -f "$(targetFramework)" \
+                  -o "$out" \
+                  -p:UseAppHost=false
+
+                copy_once "$out/$shared_name.dll" "$scan_dir/shared"
+                copy_once "$out/$shared_name.pdb" "$scan_dir/shared"
+              done < "$evidence_dir/shared-projects.txt"
+
+              find "$scan_dir" -type f ! \( -name "*.dll" -o -name "*.pdb" \) -delete
+              find "$scan_dir" -type d -empty -delete
+
+              (cd "$scan_dir" && find . -type f | sort) > "$evidence_dir/sast-package-files.txt"
+              sed 's#.*/##' "$evidence_dir/sast-package-files.txt" | sort | uniq -d > "$evidence_dir/duplicate-file-names.txt"
+              grep -E '/(bin|obj|Debug|debug|Release|release|publish|publish-veracode|veracode-results|TestResults|\.vs|\.git|node_modules)/' "$evidence_dir/sast-package-files.txt" > "$evidence_dir/excluded-path-violations.txt" || true
+
+              if [ -s "$evidence_dir/duplicate-file-names.txt" ]; then
+                echo "Duplicated files detected in SAST package:"
+                cat "$evidence_dir/duplicate-file-names.txt"
+                exit 1
+              fi
+
+              if [ -s "$evidence_dir/excluded-path-violations.txt" ]; then
+                echo "Excluded paths detected in SAST package:"
+                cat "$evidence_dir/excluded-path-violations.txt"
+                exit 1
+              fi
+
+              (
+                cd "$scan_dir"
+                zip -rq "$package_path" . \
+                  -x "Microsoft.*.dll" "System.*.dll" "Newtonsoft.Json.dll" \
+                  -x "*.deps.json" "*.runtimeconfig.json" "*.json" "*.xml" "*.config" "*.log" "*.md" \
+                  -x "*/bin/*" "*/obj/*" "*/Debug/*" "*/debug/*" "*/Release/*" "*/release/*" \
+                  -x "*/publish/*" "*/publish-veracode/*" "*/veracode-scan/*" "*/veracode-results/*" \
+                  -x "*/TestResults/*" "*/.vs/*" "*/.git/*" "*/node_modules/*"
+              )
+
+              ls -lh "$package_path"
+            displayName: "Step: Package - Create Deduplicated Veracode ZIP"
+
+          - publish: "$(Build.ArtifactStagingDirectory)/$(veracodePackage)"
+            displayName: "Step: Package - Publish ZIP"
             artifact: veracode-upload-package
 
-          - script: |
+          - publish: "$(Build.ArtifactStagingDirectory)/veracode-evidence"
+            displayName: "Step: Package - Publish Evidence"
+            artifact: veracode-package-evidence
+
+  - stage: SAST
+    displayName: "Step: SAST"
+    dependsOn: Package
+    jobs:
+      - job: sast
+        displayName: "Step: SAST - Upload and Scan"
+        steps:
+          - checkout: none
+
+          - download: current
+            displayName: "Step: SAST - Download ZIP"
+            artifact: veracode-upload-package
+
+          - bash: |
+              set -euo pipefail
+
               docker run --rm \
                 --entrypoint "" \
                 -v "$(Pipeline.Workspace)/veracode-upload-package:/scan" \
@@ -135,159 +303,205 @@ stages:
                   -action UploadAndScan \
                   -vid "$(VERACODE_API_ID)" \
                   -vkey "$(VERACODE_API_KEY)" \
-                  -appname "$(VERACODE_APP_NAME)" \
+                  -appname "$(veracodeAppName)" \
                   -createprofile true \
-                  -filepath "/scan/$(VERACODE_PACKAGE)" \
+                  -filepath "/scan/$(veracodePackage)" \
                   -version "Azure-$(Build.BuildId)-$(Build.SourceVersion)" \
                   -criticality VeryHigh \
                   -scanallnonfataltoplevelmodules true \
                   -includenewmodules true \
-                  -deleteincompletescan 1 \
+                  -deleteincompletescan 2 \
                   -maxretrycount 3 \
                   -scanpollinginterval 120 \
                   -scantimeout 60
-            displayName: Veracode Upload and Scan
+            displayName: "Step: SAST - Veracode Upload and Scan"
+            env:
+              VERACODE_API_ID: $(VERACODE_API_ID)
+              VERACODE_API_KEY: $(VERACODE_API_KEY)
 
-  - stage: Veracode_SCA
-    displayName: Veracode SCA - Agent-Based Scan
-    dependsOn: QA_Package
+  - stage: SCA
+    displayName: "Step: SCA"
+    dependsOn: QA
     jobs:
-      - job: veracode_sca
-        displayName: SCA scan
-        pool:
-          vmImage: ubuntu-latest
+      - job: sca
+        displayName: "Step: SCA - Aggregate Dependency Scan"
         steps:
           - checkout: self
+            clean: true
 
           - task: UseDotNet@2
-            displayName: Setup .NET 8
+            displayName: "Step: SCA - Setup .NET 8"
             inputs:
               packageType: sdk
               version: 8.0.x
 
-          - script: chmod +x scripts/*.sh
-            displayName: Make scripts executable
+          - bash: |
+              set -euo pipefail
 
-          - script: ./scripts/create-sca-aggregate-project.sh
-            displayName: Create single SCA aggregate project
-            env:
-              APP_PROJECTS: $(APP_PROJECTS)
-              SERVICE_ROOT: $(SERVICE_ROOT)
-              SHARED_ROOT: $(SHARED_ROOT)
-              TARGET_FRAMEWORK: $(TARGET_FRAMEWORK)
+              aggregate_dir="$(Build.ArtifactStagingDirectory)/sca-scan"
+              aggregate_project="$aggregate_dir/VeracodeSca.Aggregate.csproj"
+              evidence_dir="$(Build.ArtifactStagingDirectory)/sca-evidence"
 
-          - script: |
-              find . -type d \( -name bin -o -name obj -o -name publish -o -name publish-veracode -o -name veracode-scan \) -prune -exec rm -rf {} +
-              rm -f veracode-upload.zip docker-images.txt
-            displayName: Remove build artifacts before SCA
+              rm -rf "$aggregate_dir" "$evidence_dir"
+              mkdir -p "$aggregate_dir" "$evidence_dir"
 
-          - script: |
+              {
+                echo '<Project Sdk="Microsoft.NET.Sdk">'
+                echo '  <PropertyGroup>'
+                echo '    <TargetFramework>net8.0</TargetFramework>'
+                echo '    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>'
+                echo '  </PropertyGroup>'
+                echo '  <ItemGroup>'
+              } > "$aggregate_project"
+
+              find "$(sourceRoot)" -type f -name "*.csproj" \
+                ! -path "*/bin/*" \
+                ! -path "*/obj/*" \
+                ! -path "*/tests/*" \
+                ! -path "*/Tests/*" \
+                | sort \
+                | tee "$evidence_dir/sca-projects.txt" \
+                | while IFS= read -r project; do
+                    grep -E '<PackageReference[[:space:]]' "$project" || true
+                  done \
+                | sed -E 's/.*<PackageReference/<PackageReference/' \
+                | sed -E 's#/>.*#/>#' \
+                | sort -u \
+                >> "$aggregate_project"
+
+              {
+                echo '  </ItemGroup>'
+                echo '</Project>'
+              } >> "$aggregate_project"
+
+              dotnet restore "$aggregate_project"
+              cat "$aggregate_project"
+            displayName: "Step: SCA - Create Aggregate Project"
+
+          - bash: |
               set -o pipefail
-              touch sca-results.txt
+
               unset SRCCLR_WORKSPACE
               unset SRCCLR_WORKSPACE_ID
               unset SRCCLR_WORKSPACE_NAME
               unset SRCCLR_WORKSPACE_SLUG
-              echo "SCA environment variables enabled:"
-              env | cut -d= -f1 | grep '^SRCCLR_' | sort
+
+              mkdir -p "$(Build.ArtifactStagingDirectory)/sca-results"
+              touch "$(Build.ArtifactStagingDirectory)/sca-results/sca-results.txt"
+
               set +e
               curl -sSL https://download.sourceclear.com/ci.sh \
-                | sh -s -- scan sca-scan --allow-dirty --skip-vms \
-                2>&1 | tee sca-results.txt
+                | sh -s -- scan "$(Build.ArtifactStagingDirectory)/sca-scan" --allow-dirty --skip-vms \
+                2>&1 | tee "$(Build.ArtifactStagingDirectory)/sca-results/sca-results.txt"
               sca_exit="${PIPESTATUS[1]}"
               set -e
 
-              if grep -q "Workspace has reached maximum number of projects" sca-results.txt && [ "${SCA_FAIL_ON_WORKSPACE_LIMIT:-false}" != "true" ]; then
-                echo "##vso[task.logissue type=warning]Veracode SCA workspace reached the maximum number of projects. Clean up projects, increase the workspace limit, or use a token from another workspace. Continuing because SCA_FAIL_ON_WORKSPACE_LIMIT is false."
+              if grep -q "Workspace has reached maximum number of projects" "$(Build.ArtifactStagingDirectory)/sca-results/sca-results.txt" && [ "$(scaFailOnWorkspaceLimit)" != "true" ]; then
+                echo "##vso[task.logissue type=warning]Veracode SCA workspace reached the maximum number of projects. Continuing because scaFailOnWorkspaceLimit is false."
                 exit 0
               fi
 
               exit "$sca_exit"
-            displayName: Veracode SCA
+            displayName: "Step: SCA - Veracode Agent-Based Scan"
             env:
               SRCCLR_API_TOKEN: $(SRCCLR_API_TOKEN)
-              SCA_FAIL_ON_WORKSPACE_LIMIT: $(SCA_FAIL_ON_WORKSPACE_LIMIT)
 
-          - publish: sca-results.txt
+          - publish: "$(Build.ArtifactStagingDirectory)/sca-results"
+            displayName: "Step: SCA - Publish Results"
+            condition: always()
             artifact: veracode-sca-results
-            displayName: Publish SCA results
-            condition: always()
 
-          - publish: sca-evidence
+          - publish: "$(Build.ArtifactStagingDirectory)/sca-evidence"
+            displayName: "Step: SCA - Publish Evidence"
+            condition: always()
             artifact: veracode-sca-evidence
-            displayName: Publish SCA evidence
-            condition: always()
 
-  - stage: Veracode_IaC
-    displayName: Veracode IaC - CLI Scan
-    dependsOn: QA_Package
+  - stage: IaC
+    displayName: "Step: IaC"
+    dependsOn: QA
     jobs:
-      - job: veracode_iac
-        displayName: IaC scan
-        pool:
-          vmImage: ubuntu-latest
+      - job: iac
+        displayName: "Step: IaC - Veracode CLI"
         steps:
           - checkout: self
+            clean: true
 
-          - script: chmod +x scripts/*.sh
-            displayName: Make scripts executable
+          - bash: |
+              set -euo pipefail
+              curl -fsS https://tools.veracode.com/veracode-cli/install | sh
+              ./veracode version
+            displayName: "Step: IaC - Install Veracode CLI"
 
-          - script: |
-              mkdir -p veracode-results
-              ./scripts/veracode-cli-scans.sh
-            displayName: Run Veracode CLI IaC scan
+          - bash: |
+              set -euo pipefail
+
+              mkdir -p "$(Build.ArtifactStagingDirectory)/veracode-results"
+
+              ./veracode scan \
+                --type directory \
+                --source "$(Build.SourcesDirectory)" \
+                --format json \
+                --output "$(Build.ArtifactStagingDirectory)/veracode-results/iac-results.json"
+
+              ./veracode scan \
+                --type directory \
+                --source "$(Build.SourcesDirectory)" \
+                --format table
+            displayName: "Step: IaC - Scan IaC and Secrets"
             env:
               VERACODE_API_KEY_ID: $(VERACODE_API_ID)
               VERACODE_API_KEY_SECRET: $(VERACODE_API_KEY)
-              IAC_DIR: .
 
-          - publish: veracode-results
-            artifact: veracode-iac-results
-            displayName: Publish Veracode IaC results
+          - publish: "$(Build.ArtifactStagingDirectory)/veracode-results"
+            displayName: "Step: IaC - Publish Results"
             condition: always()
+            artifact: veracode-iac-results
 
-  - stage: Docker_Build
-    displayName: Docker - Build Images
+  - stage: Docker
+    displayName: "Step: Docker"
     dependsOn:
-      - Veracode_SAST
-      - Veracode_SCA
-      - Veracode_IaC
+      - SAST
+      - SCA
+      - IaC
     jobs:
-      - job: docker_build
-        displayName: Build service images
-        pool:
-          vmImage: ubuntu-latest
+      - job: docker
+        displayName: "Step: Docker - Build Service Images"
         steps:
           - checkout: self
+            clean: true
 
-          - script: chmod +x scripts/*.sh
-            displayName: Make scripts executable
+          - bash: |
+              set -euo pipefail
 
-          - script: |
-              {
-                for csproj in $APP_PROJECTS; do printf '%s\n' "$csproj"; done
-                if [ -d "$SERVICE_ROOT" ]; then
-                  find "$SERVICE_ROOT" \
-                    -path "*/bin" -prune -o \
-                    -path "*/obj" -prune -o \
-                    -name "*.csproj" -type f -print
-                fi
-              } | sort -u | while read -r csproj; do
-                  test -f "$(dirname "$csproj")/Dockerfile"
-                done
-            displayName: Validate service Dockerfiles
-            env:
-              APP_PROJECTS: $(APP_PROJECTS)
-              SERVICE_ROOT: $(SERVICE_ROOT)
+              image_list="$(Build.ArtifactStagingDirectory)/docker-images.txt"
+              : > "$image_list"
 
-          - script: ./scripts/build-service-images.sh
-            displayName: Build Docker image for each microservice
-            env:
-              APP_PROJECTS: $(APP_PROJECTS)
-              SERVICE_ROOT: $(SERVICE_ROOT)
-              IMAGE_PREFIX: $(Build.Repository.Name)
-              IMAGE_TAG: azure-$(Build.BuildId)-$(Build.SourceVersion)
+              find "$(serviceRoot)" \
+                \( -name bin -o -name obj -o -name Debug -o -name Release \) -type d -prune -o \
+                -name "*.csproj" -type f -print \
+                | sort \
+                | while IFS= read -r project; do
+                    dockerfile="$(dirname "$project")/Dockerfile"
+                    service_name="$(basename "$project" .csproj)"
+                    image_name="$(echo "$(Build.Repository.Name)/$service_name" | tr '[:upper:]' '[:lower:]')"
+                    image_tag="azure-$(Build.BuildId)"
 
-          - publish: docker-images.txt
+                    if [ ! -f "$dockerfile" ]; then
+                      echo "Dockerfile not found for $project at $dockerfile"
+                      exit 1
+                    fi
+
+                    docker build \
+                      -f "$dockerfile" \
+                      -t "$image_name:$image_tag" \
+                      .
+
+                    echo "$image_name:$image_tag" >> "$image_list"
+                  done
+
+              cat "$image_list"
+            displayName: "Step: Docker - Build Images"
+
+          - publish: "$(Build.ArtifactStagingDirectory)/docker-images.txt"
+            displayName: "Step: Docker - Publish Image List"
             artifact: docker-images
-            displayName: Publish Docker image list

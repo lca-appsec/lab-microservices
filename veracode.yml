@@ -1,0 +1,52 @@
+debug: true
+
+default:
+  runs_on: ubuntu-latest
+
+veracode_static_scan:
+  analysis_branch: main
+  analysis_on_platform: true
+  use_custom_workflow: veracode-deduplicated-build
+  artifact_file: veracode-artifact
+  policy: "Veracode Recommended High"
+  create_code_scanning_alert: true
+  break_build_policy_findings: true
+
+  push:
+    trigger: true
+    branches_to_run:
+      - main
+      - dev
+
+  pull_request:
+    trigger: true
+    action:
+      - opened
+      - synchronize
+      - reopened
+    target_branch:
+      - main
+
+veracode_sca_scan:
+  push:
+    trigger: true
+    branches_to_run:
+      - main
+      - dev
+
+  pull_request:
+    trigger: true
+    target_branch:
+      - main
+
+veracode_container_iac_secrets_scan:
+  push:
+    trigger: true
+    branches_to_run:
+      - main
+      - dev
+
+  pull_request:
+    trigger: true
+    target_branch:
+      - main

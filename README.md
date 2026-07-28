@@ -91,7 +91,7 @@ Configuracoes opcionais via GitHub Actions Variables:
 
 ## Azure DevOps
 
-- `azure-pipelines.yml`: pipeline unica equivalente ao GitHub Actions, adaptada para Azure DevOps.
+- `azure-pipelines.yml`: pipeline unica equivalente ao GitHub Actions, adaptada para Azure DevOps. No Azure DevOps, a etapa de empacotamento SAST esta inline no proprio YAML para demonstrar a deduplicacao sem depender do script `package-all-services-for-veracode.sh`.
 
 A pipeline executa os mesmos passos: QA/package, SAST Upload And Scan, SCA, IaC e Docker build somente depois dos scans. O SAST usa o container `veracode/api-wrapper-java`, entao nao depende de extensao do Marketplace do Azure DevOps.
 
