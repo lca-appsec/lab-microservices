@@ -87,7 +87,7 @@ stages:
                 find "$(sourceRoot)" -type f -name "*.csproj" \
                   ! -path "*/bin/*" \
                   ! -path "*/obj/*" \
-                  | grep -Ei '(/tests?/|\.tests?\.csproj$)' || true
+                  | grep -Ei '(/tests?/|\.tests?\.csproj$)' || "true"
               )
 
               if [ "${#tests[@]}" -eq 0 ]; then
@@ -244,7 +244,7 @@ stages:
 
               (cd "$scan_dir" && find . -type f | sort) > "$evidence_dir/sast-package-files.txt"
               sed 's#.*/##' "$evidence_dir/sast-package-files.txt" | sort | uniq -d > "$evidence_dir/duplicate-file-names.txt"
-              grep -E '/(bin|obj|Debug|debug|Release|release|publish|publish-veracode|veracode-results|TestResults|\.vs|\.git|node_modules)/' "$evidence_dir/sast-package-files.txt" > "$evidence_dir/excluded-path-violations.txt" || true
+              grep -E '/(bin|obj|Debug|debug|Release|release|publish|publish-veracode|veracode-results|TestResults|\.vs|\.git|node_modules)/' "$evidence_dir/sast-package-files.txt" > "$evidence_dir/excluded-path-violations.txt" || "true"
 
               if [ -s "$evidence_dir/duplicate-file-names.txt" ]; then
                 echo "Duplicated files detected in SAST package:"
@@ -304,12 +304,12 @@ stages:
                   -vid "$(VERACODE_API_ID)" \
                   -vkey "$(VERACODE_API_KEY)" \
                   -appname "$(veracodeAppName)" \
-                  -createprofile true \
+                  -createprofile "true" \
                   -filepath "/scan/$(veracodePackage)" \
                   -version "Azure-$(Build.BuildId)-$(Build.SourceVersion)" \
                   -criticality VeryHigh \
-                  -scanallnonfataltoplevelmodules true \
-                  -includenewmodules true \
+                  -scanallnonfataltoplevelmodules "true" \
+                  -includenewmodules "true" \
                   -deleteincompletescan 2 \
                   -maxretrycount 3 \
                   -scanpollinginterval 120 \
@@ -362,7 +362,7 @@ stages:
                 | sort \
                 | tee "$evidence_dir/sca-projects.txt" \
                 | while IFS= read -r project; do
-                    grep -E '<PackageReference[[:space:]]' "$project" || true
+                    grep -E '<PackageReference[[:space:]]' "$project" || "true"
                   done \
                 | sed -E 's/.*<PackageReference/<PackageReference/' \
                 | sed -E 's#/>.*#/>#' \
@@ -396,7 +396,7 @@ stages:
               sca_exit="${PIPESTATUS[1]}"
               set -e
 
-              if grep -q "Workspace has reached maximum number of projects" "$(Build.ArtifactStagingDirectory)/sca-results/sca-results.txt" && [ "$(scaFailOnWorkspaceLimit)" != "true" ]; then
+              if grep -q "Workspace has reached maximum number of projects" "$(Build.ArtifactStagingDirectory)/sca-results/sca-results.txt" && [ "$(scaFailOnWorkspaceLimit)" != ""true"" ]; then
                 echo "##vso[task.logissue type=warning]Veracode SCA workspace reached the maximum number of projects. Continuing because scaFailOnWorkspaceLimit is false."
                 exit 0
               fi
