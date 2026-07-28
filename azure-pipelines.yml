@@ -47,7 +47,7 @@ stages:
         displayName: "Step: QA - Restore, Build and Test"
         steps:
           - checkout: self
-            clean: true
+            clean: "true"
 
           - task: UseDotNet@2
             displayName: "Step: QA - Setup .NET 8"
@@ -122,7 +122,7 @@ stages:
         displayName: "Step: Package - Deduplicate .NET Assemblies"
         steps:
           - checkout: self
-            clean: true
+            clean: "true"
 
           - task: UseDotNet@2
             displayName: "Step: Package - Setup .NET 8"
@@ -327,7 +327,7 @@ stages:
         displayName: "Step: SCA - Aggregate Dependency Scan"
         steps:
           - checkout: self
-            clean: true
+            clean: "true"
 
           - task: UseDotNet@2
             displayName: "Step: SCA - Setup .NET 8"
@@ -424,7 +424,7 @@ stages:
         displayName: "Step: IaC - Veracode CLI"
         steps:
           - checkout: self
-            clean: true
+            clean: "true"
 
           - bash: |
               set -euo pipefail
@@ -468,7 +468,7 @@ stages:
         displayName: "Step: Docker - Build Service Images"
         steps:
           - checkout: self
-            clean: true
+            clean: "true"
 
           - bash: |
               set -euo pipefail
