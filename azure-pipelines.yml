@@ -47,7 +47,7 @@ stages:
         displayName: "Step: QA - Restore, Build and Test"
         steps:
           - checkout: self
-            clean: true
+            clean: "true"
 
           - task: UseDotNet@2
             displayName: "Step: QA - Setup .NET 8"

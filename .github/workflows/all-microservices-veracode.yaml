@@ -1,232 +1,262 @@
-name: All Microservices - QA and Veracode Scans
+name: Veracode Repository Scan - Deduplicated Build
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [main]
-    paths:
-      - "src/services/**"
-      - "src/shared/**"
-      - "infra/**"
-      - "Directory.Build.props"
-      - "global.json"
-      - ".dockerignore"
-      - "scripts/**"
-      - ".github/workflows/all-microservices-veracode.yaml"
   push:
-    branches: [main]
+    branches:
+      - main
+      - dev
     paths:
-      - "src/services/**"
-      - "src/shared/**"
+      - "src/**"
       - "infra/**"
       - "Directory.Build.props"
       - "global.json"
       - ".dockerignore"
-      - "scripts/**"
+      - "veracode.yml"
       - ".github/workflows/all-microservices-veracode.yaml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "src/**"
+      - "infra/**"
+      - "Directory.Build.props"
+      - "global.json"
+      - ".dockerignore"
+      - "veracode.yml"
+      - ".github/workflows/all-microservices-veracode.yaml"
+  repository_dispatch:
+    types:
+      - veracode-deduplicated-build
 
 permissions:
   contents: read
-
-concurrency:
-  group: veracode-all-microservices-${{ github.ref }}
-  cancel-in-progress: false
+  actions: read
 
 env:
-  APP_PROJECTS: ${{ vars.APP_PROJECTS }}
+  SOURCE_ROOT: ${{ vars.SOURCE_ROOT || 'src' }}
   SERVICE_ROOT: ${{ vars.SERVICE_ROOT || 'src/services' }}
   SHARED_ROOT: ${{ vars.SHARED_ROOT || 'src/shared' }}
   TARGET_FRAMEWORK: ${{ vars.TARGET_FRAMEWORK || 'net8.0' }}
-  VERACODE_APP_NAME: ${{ vars.VERACODE_APP_NAME || github.repository }}
+  CONFIGURATION: ${{ vars.CONFIGURATION || 'Release' }}
   VERACODE_PACKAGE: veracode-upload.zip
 
 jobs:
-  qa_package:
-    name: QA - Build and Veracode Package
+  build:
+    name: "Step: Build Deduplicated Veracode Package"
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: "Step: Checkout"
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.client_payload.sha || github.sha }}
 
-      - name: Setup .NET
+      - name: "Step: Setup .NET 8"
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"
 
-      - name: Install packaging tools
+      - name: "Step: Install Packaging Tools"
         run: sudo apt-get update && sudo apt-get install -y zip unzip
 
-      - name: Build projects
-        run: ./scripts/build.sh
-
-      - name: Create deduplicated Veracode package
-        run: ./scripts/package-all-services-for-veracode.sh
-
-      - name: Show package contents
+      - name: "Step: QA - Restore and Build"
+        shell: bash
         run: |
-          ls -lh "$VERACODE_PACKAGE"
-          echo "Service projects included:"
-          cat veracode-evidence/service-projects.txt
-          echo "Shared projects included:"
-          cat veracode-evidence/shared-projects.txt
-          echo "DLL entries:"
-          unzip -Z1 "$VERACODE_PACKAGE" | grep -E '\.dll$' | wc -l
-          echo "Unique DLL names:"
-          unzip -Z1 "$VERACODE_PACKAGE" | grep -E '\.dll$' | sed 's#.*/##' | sort -u | wc -l
-          echo "Duplicate file names:"
-          if [ -s veracode-evidence/duplicate-file-names.txt ]; then
-            cat veracode-evidence/duplicate-file-names.txt
-            exit 1
-          fi
-          echo "none"
-          echo "Excluded path violations:"
-          if [ -s veracode-evidence/excluded-path-violations.txt ]; then
-            cat veracode-evidence/excluded-path-violations.txt
-            exit 1
-          fi
-          echo "none"
+          set -euo pipefail
 
-      - name: Upload Veracode package artifact
+          solution="$(find "$SOURCE_ROOT" -type f -name "*.sln" ! -path "*/bin/*" ! -path "*/obj/*" | sort | head -n 1)"
+
+          if [ -n "$solution" ]; then
+            echo "Building solution: $solution"
+            dotnet restore "$solution"
+            dotnet build "$solution" -c "$CONFIGURATION" -f "$TARGET_FRAMEWORK" --no-restore
+          else
+            echo "No solution found. Building all projects under $SOURCE_ROOT."
+            find "$SOURCE_ROOT" -type f -name "*.csproj" \
+              ! -path "*/bin/*" \
+              ! -path "*/obj/*" \
+              ! -path "*/tests/*" \
+              ! -path "*/Tests/*" \
+              | sort \
+              | while IFS= read -r project; do
+                  dotnet restore "$project"
+                  dotnet build "$project" -c "$CONFIGURATION" -f "$TARGET_FRAMEWORK" --no-restore
+                done
+          fi
+
+      - name: "Step: Package - Create Deduplicated Veracode ZIP"
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          scan_dir="veracode-scan"
+          publish_dir="publish-veracode"
+          evidence_dir="veracode-evidence"
+          copied_files="$(mktemp)"
+
+          rm -rf "$scan_dir" "$publish_dir" "$evidence_dir" "$VERACODE_PACKAGE"
+          mkdir -p "$scan_dir/services" "$scan_dir/shared" "$publish_dir" "$evidence_dir"
+          touch "$copied_files"
+
+          find_projects() {
+            local root="$1"
+            [ -d "$root" ] || return 0
+
+            find "$root" \
+              \( -name bin -o -name obj -o -name Debug -o -name debug -o -name Release -o -name release \
+                 -o -name publish -o -name publish-veracode -o -name veracode-scan -o -name veracode-results \
+                 -o -name TestResults -o -name .vs -o -name .git -o -name node_modules \) -type d -prune -o \
+              -name "*.csproj" -type f -print
+          }
+
+          assembly_name() {
+            local csproj="$1"
+            local name
+            name="$(sed -nE 's:.*<AssemblyName>([^<]+)</AssemblyName>.*:\1:p' "$csproj" | head -1)"
+            printf '%s\n' "${name:-$(basename "$csproj" .csproj)}"
+          }
+
+          copy_once() {
+            local source="$1"
+            local target_dir="$2"
+            local name
+
+            name="$(basename "$source")"
+
+            if [ -f "$source" ] && ! grep -Fxq "$name" "$copied_files"; then
+              mkdir -p "$target_dir"
+              cp "$source" "$target_dir/$name"
+              printf '%s\n' "$name" >> "$copied_files"
+            fi
+          }
+
+          find_projects "$SOURCE_ROOT" | sort -u > "$evidence_dir/all-projects.txt"
+          find_projects "$SHARED_ROOT" | sort -u > "$evidence_dir/shared-projects.txt"
+
+          find_projects "$SERVICE_ROOT" \
+            | sort -u \
+            | while IFS= read -r project; do
+                project_name="$(basename "$project" .csproj)"
+
+                if grep -q 'Sdk="Microsoft.NET.Sdk.Web"' "$project" \
+                  || grep -q '<OutputType>Exe</OutputType>' "$project" \
+                  || echo "$project_name" | grep -Eq '(\.Api|\.Job|\.Worker|\.Service)$'; then
+                  echo "$project"
+                fi
+              done \
+            | sort -u > "$evidence_dir/service-projects.txt"
+
+          if [ ! -s "$evidence_dir/service-projects.txt" ]; then
+            echo "No service projects were found under $SERVICE_ROOT."
+            exit 1
+          fi
+
+          while IFS= read -r project; do
+            assembly_name "$project"
+          done < "$evidence_dir/all-projects.txt" | sort -u > "$evidence_dir/internal-assemblies.txt"
+
+          echo "Service projects:"
+          cat "$evidence_dir/service-projects.txt"
+          echo "Shared projects:"
+          cat "$evidence_dir/shared-projects.txt"
+
+          while IFS= read -r project; do
+            service_name="$(assembly_name "$project")"
+            out="$publish_dir/$service_name"
+
+            dotnet publish "$project" \
+              -c "$CONFIGURATION" \
+              -f "$TARGET_FRAMEWORK" \
+              -o "$out" \
+              -p:UseAppHost=false
+
+            copy_once "$out/$service_name.dll" "$scan_dir/services/$service_name"
+            copy_once "$out/$service_name.pdb" "$scan_dir/services/$service_name"
+
+            while IFS= read -r assembly; do
+              [ "$assembly" = "$service_name" ] && continue
+              copy_once "$out/$assembly.dll" "$scan_dir/shared"
+              copy_once "$out/$assembly.pdb" "$scan_dir/shared"
+            done < "$evidence_dir/internal-assemblies.txt"
+          done < "$evidence_dir/service-projects.txt"
+
+          while IFS= read -r project; do
+            shared_name="$(assembly_name "$project")"
+            out="$publish_dir/shared/$shared_name"
+
+            dotnet publish "$project" \
+              -c "$CONFIGURATION" \
+              -f "$TARGET_FRAMEWORK" \
+              -o "$out" \
+              -p:UseAppHost=false
+
+            copy_once "$out/$shared_name.dll" "$scan_dir/shared"
+            copy_once "$out/$shared_name.pdb" "$scan_dir/shared"
+          done < "$evidence_dir/shared-projects.txt"
+
+          find "$scan_dir" -type f ! \( -name "*.dll" -o -name "*.pdb" \) -delete
+          find "$scan_dir" -type d -empty -delete
+
+          (cd "$scan_dir" && find . -type f | sort) > "$evidence_dir/sast-package-files.txt"
+          sed 's#.*/##' "$evidence_dir/sast-package-files.txt" | sort | uniq -d > "$evidence_dir/duplicate-file-names.txt"
+          grep -E '/(bin|obj|Debug|debug|Release|release|publish|publish-veracode|veracode-results|TestResults|\.vs|\.git|node_modules)/' "$evidence_dir/sast-package-files.txt" > "$evidence_dir/excluded-path-violations.txt" || true
+
+          if [ -s "$evidence_dir/duplicate-file-names.txt" ]; then
+            echo "Duplicated files detected in SAST package:"
+            cat "$evidence_dir/duplicate-file-names.txt"
+            exit 1
+          fi
+
+          if [ -s "$evidence_dir/excluded-path-violations.txt" ]; then
+            echo "Excluded paths detected in SAST package:"
+            cat "$evidence_dir/excluded-path-violations.txt"
+            exit 1
+          fi
+
+          (
+            cd "$scan_dir"
+            zip -rq "../$VERACODE_PACKAGE" . \
+              -x "Microsoft.*.dll" "System.*.dll" "Newtonsoft.Json.dll" \
+              -x "*.deps.json" "*.runtimeconfig.json" "*.json" "*.xml" "*.config" "*.log" "*.md" \
+              -x "*/bin/*" "*/obj/*" "*/Debug/*" "*/debug/*" "*/Release/*" "*/release/*" \
+              -x "*/publish/*" "*/publish-veracode/*" "*/veracode-scan/*" "*/veracode-results/*" \
+              -x "*/TestResults/*" "*/.vs/*" "*/.git/*" "*/node_modules/*"
+          )
+
+          ls -lh "$VERACODE_PACKAGE"
+
+      - name: "Step: Upload Veracode Artifact"
         uses: actions/upload-artifact@v4
         with:
-          name: veracode-upload-package
-          path: |
-            ${{ env.VERACODE_PACKAGE }}
-            veracode-evidence/
+          name: veracode-artifact
+          path: veracode-upload.zip
 
-  veracode_sast:
-    name: Veracode SAST - Upload and Scan
+      - name: "Step: Upload Package Evidence"
+        uses: actions/upload-artifact@v4
+        with:
+          name: veracode-package-evidence
+          path: veracode-evidence/
+
+  register:
+    name: "Step: Register Build for Veracode Repository Scan"
     runs-on: ubuntu-latest
-    needs: qa_package
+    needs: build
+    if: github.event_name == 'repository_dispatch'
 
     steps:
-      - name: Download Veracode package artifact
-        uses: actions/download-artifact@v4
+      - name: "Step: Register Build"
+        uses: veracode/github-actions-integration-helper@main
         with:
-          name: veracode-upload-package
-          path: .
-
-      - name: Veracode Upload and Scan
-        uses: veracode/veracode-uploadandscan-action@0.2.10
-        with:
-          appname: ${{ env.VERACODE_APP_NAME }}
-          createprofile: true
-          filepath: ${{ env.VERACODE_PACKAGE }}
-          version: GitHub-${{ github.run_number }}-${{ github.sha }}
+          action: registerBuild
           vid: ${{ secrets.VERACODE_API_ID }}
           vkey: ${{ secrets.VERACODE_API_KEY }}
-          criticality: VeryHigh
-          scanallnonfataltoplevelmodules: true
-          includenewmodules: true
-          deleteincompletescan: 1
-          maxretrycount: 3
-          scanpollinginterval: 120
-          scantimeout: 60
-
-  veracode_sca:
-    name: Veracode SCA - Agent Based Scan
-    runs-on: ubuntu-latest
-    needs: qa_package
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: "8.0.x"
-
-      - name: Create single SCA aggregate project
-        run: ./scripts/create-sca-aggregate-project.sh
-
-      - name: Remove build artifacts before SCA
-        run: |
-          find . -type d \( -name bin -o -name publish-veracode -o -name veracode-scan \) -prune -exec rm -rf {} +
-          rm -f veracode-upload.zip docker-images.txt
-
-      - name: Veracode SCA
-        env:
-          SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
-        run: |
-          set -o pipefail
-          unset SRCCLR_WORKSPACE
-          unset SRCCLR_WORKSPACE_ID
-          unset SRCCLR_WORKSPACE_NAME
-          unset SRCCLR_WORKSPACE_SLUG
-          echo "SCA environment variables enabled:"
-          env | cut -d= -f1 | grep '^SRCCLR_' | sort
-          curl -sSL https://download.sourceclear.com/ci.sh \
-            | sh -s -- scan sca-scan --allow-dirty --skip-vms \
-            2>&1 | tee sca-results.txt
-
-      - name: Upload SCA results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: veracode-sca-results
-          path: |
-            sca-results.txt
-            sca-evidence/
-
-  veracode_iac:
-    name: Veracode IaC - CLI Scan
-    runs-on: ubuntu-latest
-    needs: qa_package
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Run Veracode CLI IaC scan
-        env:
-          VERACODE_API_KEY_ID: ${{ secrets.VERACODE_API_ID }}
-          VERACODE_API_KEY_SECRET: ${{ secrets.VERACODE_API_KEY }}
-          IAC_DIR: .
-        run: ./scripts/veracode-cli-scans.sh
-
-      - name: Upload Veracode IaC results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: veracode-iac-results
-          path: veracode-results/
-
-  docker_build:
-    name: Docker - Build Images
-    runs-on: ubuntu-latest
-    needs:
-      - veracode_sast
-      - veracode_sca
-      - veracode_iac
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Validate service Dockerfiles
-        run: |
-          {
-            for csproj in $APP_PROJECTS; do printf '%s\n' "$csproj"; done
-            if [ -d "$SERVICE_ROOT" ]; then
-              find "$SERVICE_ROOT" \
-                -path "*/bin" -prune -o \
-                -path "*/obj" -prune -o \
-                -name "*.csproj" -type f -print
-            fi
-          } | sort -u | while read -r csproj; do
-              test -f "$(dirname "$csproj")/Dockerfile"
-            done
-
-      - name: Build Docker image for each microservice
-        env:
-          IMAGE_PREFIX: ${{ github.repository }}
-          IMAGE_TAG: github-${{ github.run_number }}-${{ github.sha }}
-        run: ./scripts/build-service-images.sh
-
-      - name: Upload Docker image list
-        uses: actions/upload-artifact@v4
-        with:
-          name: docker-images
-          path: docker-images.txt
+          token: ${{ github.event.client_payload.token }}
+          appname: ${{ github.event.client_payload.user_config.profile_name }}
+          source_repository: ${{ github.event.client_payload.repository.full_name }}
+          check_run_id: ${{ github.run_id }}
+          check_run_name: ${{ github.workflow }}
+          head_sha: ${{ github.event.client_payload.sha }}
+          event_type: ${{ github.event.client_payload.event_type }}
+          branch: ${{ github.event.client_payload.user_config.sandbox_scan.branch }}
+          issue_trigger_flow: ${{ github.event.client_payload.user_config.issue_trigger_flow }}
